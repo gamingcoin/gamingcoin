@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+Building gamingcoin
+
+See doc/readme-qt.rst for instructions on building gamingcoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of gamingcoin.
+
+See doc/build-*.txt for instructions on building gamingcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of gamingcoin.
+=======
+Building Freicoin
+
+See doc/readme-qt.rst for instructions on building Freicoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Freicoin.
+
+See doc/build-*.txt for instructions on building freicoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Freicoin.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

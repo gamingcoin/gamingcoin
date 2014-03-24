@@ -1,0 +1,5 @@
+GamingCoin-qt usr/bin
+share/pixmaps/GamingCoin32.xpm usr/share/pixmaps
+share/pixmaps/GamingCoin80.xpm usr/share/pixmaps
+debian/GamingCoin-qt.desktop usr/share/applications
+debian/GamingCoin-qt.protocol usr/share/kde4/services/

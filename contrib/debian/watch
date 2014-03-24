@@ -1,0 +1,13 @@
+# Run the "uscan" command to check for upstream updates and more.
+version=3
+# use qa.debian.org redirector; see man uscan
+opts=uversionmangle=s/(\d)(alpha|beta|rc)/$1~$2/;s/\-src//,dversionmangle=s/~dfsg\d*// \
+<<<<<<< HEAD
+ http://sf.net/GamingCoin/GamingCoin-(\d.*)-linux\.tar\.gz debian
+opts=uversionmangle=s/(\d)(alpha|beta|rc)/$1~$2/,dversionmangle=s/~dfsg\d*// \
+ http://githubredir.debian.net/github/GamingCoin/GamingCoin v(.*).tar.gz
+=======
+ http://sf.net/freicoin/freicoin-(\d.*)-linux\.tar\.gz debian
+opts=uversionmangle=s/(\d)(alpha|beta|rc)/$1~$2/,dversionmangle=s/~dfsg\d*// \
+ http://githubredir.debian.net/github/freicoin/freicoin v(.*).tar.gz
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

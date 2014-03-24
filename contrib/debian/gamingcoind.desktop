@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=GamingCoin
+Comment=GamingCoin P2P Cryptocurrency
+Comment[es]=GamingCoin, cryptomoneda descentralizada para jugadores.
+Comment[en]=GamingCoin, descentralized cryptocurrence for gamers.
+Exec=/usr/bin/GamingCoin-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/GamingCoin80.xpm
+MimeType=x-scheme-handler/GamingCoin;
+Categories=Office;
