@@ -3,7 +3,11 @@
 
 #include "walletmodel.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -26,7 +30,11 @@ class TxViewDelegate : public QAbstractItemDelegate
     Q_OBJECT
 public:
 <<<<<<< HEAD
+<<<<<<< HEAD
     TxViewDelegate(): QAbstractItemDelegate(), unit(gamingcoinUnits::FRC)
+=======
+    TxViewDelegate(): QAbstractItemDelegate(), unit(FreicoinUnits::FRC)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     TxViewDelegate(): QAbstractItemDelegate(), unit(FreicoinUnits::FRC)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -77,7 +85,11 @@ public:
         }
         painter->setPen(foreground);
 <<<<<<< HEAD
+<<<<<<< HEAD
         QString amountText = gamingcoinUnits::formatWithUnit(unit, RoundAbsolute(amount, ROUND_TOWARDS_ZERO), true);
+=======
+        QString amountText = FreicoinUnits::formatWithUnit(unit, RoundAbsolute(amount, ROUND_TOWARDS_ZERO), true);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         QString amountText = FreicoinUnits::formatWithUnit(unit, RoundAbsolute(amount, ROUND_TOWARDS_ZERO), true);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -148,9 +160,15 @@ void OverviewPage::setBalance(const mpq& balance, const mpq& unconfirmedBalance,
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
 <<<<<<< HEAD
+<<<<<<< HEAD
     ui->labelBalance->setText(gamingcoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
     ui->labelUnconfirmed->setText(gamingcoinUnits::formatWithUnit(unit, RoundAbsolute(unconfirmedBalance, ROUND_TOWARDS_ZERO)));
     ui->labelImmature->setText(gamingcoinUnits::formatWithUnit(unit, RoundAbsolute(immatureBalance, ROUND_TOWARDS_ZERO)));
+=======
+    ui->labelBalance->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
+    ui->labelUnconfirmed->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(unconfirmedBalance, ROUND_TOWARDS_ZERO)));
+    ui->labelImmature->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(immatureBalance, ROUND_TOWARDS_ZERO)));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     ui->labelBalance->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
     ui->labelUnconfirmed->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(unconfirmedBalance, ROUND_TOWARDS_ZERO)));

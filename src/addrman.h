@@ -2,8 +2,13 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifndef _gamingcoin_ADDRMAN
 #define _gamingcoin_ADDRMAN 1
+=======
+#ifndef _FREICOIN_ADDRMAN
+#define _FREICOIN_ADDRMAN 1
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #ifndef _FREICOIN_ADDRMAN
 #define _FREICOIN_ADDRMAN 1

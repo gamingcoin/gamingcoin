@@ -6,7 +6,11 @@
 #include "addresstablemodel.h"
 #include "transactiontablemodel.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -273,7 +277,11 @@ void TransactionView::changedAmount(const QString &amount)
         return;
     mpq amount_parsed = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     if(gamingcoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
+=======
+    if(FreicoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     if(FreicoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

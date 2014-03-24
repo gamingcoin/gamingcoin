@@ -107,7 +107,11 @@ BOOST_AUTO_TEST_CASE(util_DateTimeStrFormat)
     BOOST_CHECK_EQUAL(DateTimeStrFormat("%x %H:%M:%S", 0), "01/01/70 00:00:00");
     BOOST_CHECK_EQUAL(DateTimeStrFormat("%x %H:%M:%S", 0x7FFFFFFF), "01/19/38 03:14:07");
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Formats used within gamingcoin
+=======
+    // Formats used within Freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Formats used within Freicoin
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

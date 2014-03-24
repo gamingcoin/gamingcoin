@@ -196,7 +196,11 @@ ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue,
             string strAddress;
             ssKey >> strAddress;
 <<<<<<< HEAD
+<<<<<<< HEAD
             ssValue >> pwallet->mapAddressBook[CgamingcoinAddress(strAddress).Get()];
+=======
+            ssValue >> pwallet->mapAddressBook[CFreicoinAddress(strAddress).Get()];
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             ssValue >> pwallet->mapAddressBook[CFreicoinAddress(strAddress).Get()];
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -489,7 +493,11 @@ void ThreadFlushWalletDB(void* parg)
 {
     // Make this thread recognisable as the wallet flushing thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-wallet");
+=======
+    RenameThread("freicoin-wallet");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-wallet");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -4,7 +4,11 @@
 #include "addresstablemodel.h"
 #include "optionsmodel.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoingui.h"
+=======
+#include "freicoingui.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoingui.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

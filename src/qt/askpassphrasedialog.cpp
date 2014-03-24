@@ -99,7 +99,11 @@ void AskPassphraseDialog::accept()
         }
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm wallet encryption"),
 <<<<<<< HEAD
+<<<<<<< HEAD
                  tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR gamingcoinS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
+=======
+                 tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR FREICOINS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                  tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR FREICOINS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -114,9 +118,15 @@ void AskPassphraseDialog::accept()
                     QMessageBox::warning(this, tr("Wallet encrypted"),
                                          "<qt>" + 
 <<<<<<< HEAD
+<<<<<<< HEAD
                                          tr("gamingcoin will close now to finish the encryption process. "
                                          "Remember that encrypting your wallet cannot fully protect "
                                          "your gamingcoins from being stolen by malware infecting your computer.") + 
+=======
+                                         tr("Freicoin will close now to finish the encryption process. "
+                                         "Remember that encrypting your wallet cannot fully protect "
+                                         "your freicoins from being stolen by malware infecting your computer.") + 
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                                          tr("Freicoin will close now to finish the encryption process. "
                                          "Remember that encrypting your wallet cannot fully protect "

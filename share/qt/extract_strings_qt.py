@@ -8,7 +8,11 @@ import glob
 import operator
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 OUT_CPP="src/qt/gamingcoinstrings.cpp"
+=======
+OUT_CPP="src/qt/freicoinstrings.cpp"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 OUT_CPP="src/qt/freicoinstrings.cpp"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -68,17 +72,23 @@ f.write("""#include <QtGlobal>
 #endif
 """)
 <<<<<<< HEAD
+<<<<<<< HEAD
 f.write('static const char UNUSED *gamingcoin_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
         f.write('QT_TRANSLATE_NOOP("gamingcoin-core", %s),\n' % ('\n'.join(msgid)))
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 f.write('static const char UNUSED *freicoin_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
         f.write('QT_TRANSLATE_NOOP("freicoin-core", %s),\n' % ('\n'.join(msgid)))
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 f.write('};')
 f.close()

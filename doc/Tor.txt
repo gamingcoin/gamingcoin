@@ -1,13 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 TOR SUPPORT IN gamingcoin
 =======================
 
 It is possible to run gamingcoin as a Tor hidden service, and connect to such services.
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 TOR SUPPORT IN FREICOIN
 =======================
 
 It is possible to run Freicoin as a Tor hidden service, and connect to such services.
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
 The following assumes you have a Tor proxy running on port 9050. Many distributions
@@ -18,15 +24,21 @@ configure Tor.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Run gamingcoin behind a Tor proxy
 ----------------------------------
 
 The first step is running gamingcoin behind a Tor proxy. This will already make all
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 1. Run freicoin behind a Tor proxy
 ----------------------------------
 
 The first step is running Freicoin behind a Tor proxy. This will already make all
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 outgoing connections be anonimized, but more is possible.
 
@@ -54,15 +66,21 @@ outgoing connections be anonimized, but more is possible.
 In a typical situation, this suffices to run behind a Tor proxy:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   ./gamingcoin -proxy=127.0.0.1:9050
 
 
 2. Run a gamingcoin hidden server
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
   ./freicoin -proxy=127.0.0.1:9050
 
 
 2. Run a freicoin hidden server
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 -------------------------------
 
@@ -70,6 +88,7 @@ If you configure your Tor system accordingly, it is possible to make your node a
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file):
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   HiddenServiceDir /var/lib/tor/gamingcoin-service/
   HiddenServicePort 8639 127.0.0.1:8639
@@ -82,6 +101,8 @@ gamingcoind's P2P listen port (8639 by default).
                 configuration, you can find your onion address in
                 /var/lib/tor/gamingcoin-service/hostname. Onion addresses are given
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
   HiddenServiceDir /var/lib/tor/freicoin-service/
   HiddenServicePort 8639 127.0.0.1:8639
 
@@ -92,6 +113,9 @@ freicoind's P2P listen port (8639 by default).
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
                 /var/lib/tor/freicoin-service/hostname. Onion addresses are given
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
                 preference for your node to advertize itself with, for connections
                 coming from unroutable addresses (such as 127.0.0.1, where the
@@ -110,7 +134,11 @@ freicoind's P2P listen port (8639 by default).
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   ./gamingcoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
+=======
+  ./freicoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   ./freicoind -proxy=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -listen
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -120,7 +148,11 @@ about hiding your node, and want to be reachable on IPv4 as well, additionally
 specify:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   ./gamingcoind ... -discover
+=======
+  ./freicoind ... -discover
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   ./freicoind ... -discover
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -131,7 +163,11 @@ If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   ./gamingcoin -tor=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
+=======
+  ./freicoin -tor=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   ./freicoin -tor=127.0.0.1:9050 -externalip=57qr3yd1nyntf5k.onion -discover
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

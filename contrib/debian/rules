@@ -2,6 +2,7 @@
 # -*- mode: makefile; coding: utf-8 -*-
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #DEB_MAKE_CHECK_TARGET = test_GamingCoin
 #build/GamingCoind::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_GamingCoin)
@@ -9,18 +10,24 @@
 DEB_INSTALL_EXAMPLES_GamingCoind += debian/examples/*
 DEB_INSTALL_MANPAGES_GamingCoind += debian/manpages/*
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 #DEB_MAKE_CHECK_TARGET = test_freicoin
 #build/freicoind::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_freicoin)
 
 DEB_INSTALL_EXAMPLES_freicoind += debian/examples/*
 DEB_INSTALL_MANPAGES_freicoind += debian/manpages/*
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
+<<<<<<< HEAD
 <<<<<<< HEAD
 	cd src; $(MAKE) -f makefile.unix USE_IPV6=1 USE_QRCODE=1 USE_UPNP=0 GamingCoind
 	$(MAKE)
@@ -42,6 +49,8 @@ binary-post-install/GamingCoind:
 binary-post-install/GamingCoin-qt:
 	chmod +x $(cdbs_curdestdir)usr/bin/GamingCoin-qt
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 	cd src; $(MAKE) -f makefile.unix USE_IPV6=1 USE_QRCODE=1 USE_UPNP=0 freicoind
 	$(MAKE)
 
@@ -61,4 +70,7 @@ binary-post-install/freicoind:
 	chmod +x $(cdbs_curdestdir)usr/bin/freicoind
 binary-post-install/freicoin-qt:
 	chmod +x $(cdbs_curdestdir)usr/bin/freicoin-qt
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

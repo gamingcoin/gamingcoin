@@ -126,7 +126,11 @@ namespace json_spirit
                 case int_type:   output_int( value );         break;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /// gamingcoin: Added std::fixed and changed precision from 16 to 8
+=======
+                /// Freicoin: Added std::fixed and changed precision from 16 to 8
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 /// Freicoin: Added std::fixed and changed precision from 16 to 8
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

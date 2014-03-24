@@ -17,7 +17,11 @@ class QUrl;
 QT_END_NAMESPACE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Dialog for sending gamingcoins */
+=======
+/** Dialog for sending freicoins */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** Dialog for sending freicoins */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

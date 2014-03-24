@@ -72,7 +72,11 @@ OBJS= \
     obj/net.o \
     obj/protocol.o \
 <<<<<<< HEAD
+<<<<<<< HEAD
     obj/gamingcoinrpc.o \
+=======
+    obj/freicoinrpc.o \
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     obj/freicoinrpc.o \
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -90,7 +94,11 @@ OBJS= \
     obj/noui.o
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 all: gamingcoind.exe
+=======
+all: freicoind.exe
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 all: freicoind.exe
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -104,7 +112,11 @@ obj/%.o: %.cpp $(HEADERS)
 	i586-mingw32msvc-g++ -c $(CFLAGS) -o $@ $<
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 gamingcoind.exe: $(OBJS:obj/%=obj/%)
+=======
+freicoind.exe: $(OBJS:obj/%=obj/%)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 freicoind.exe: $(OBJS:obj/%=obj/%)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -116,7 +128,11 @@ obj-test/%.o: test/%.cpp $(HEADERS)
 	i586-mingw32msvc-g++ -c $(TESTDEFS) $(CFLAGS) -o $@ $<
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 test_gamingcoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+=======
+test_freicoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 test_freicoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -126,9 +142,15 @@ test_freicoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 clean:
 	-rm -f obj/*.o
 <<<<<<< HEAD
+<<<<<<< HEAD
 	-rm -f gamingcoind.exe
 	-rm -f obj-test/*.o
 	-rm -f test_gamingcoin.exe
+=======
+	-rm -f freicoind.exe
+	-rm -f obj-test/*.o
+	-rm -f test_freicoin.exe
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 	-rm -f freicoind.exe
 	-rm -f obj-test/*.o

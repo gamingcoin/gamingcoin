@@ -45,7 +45,11 @@
            <widget class="QLabel" name="labelWalletStatus">
             <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the gamingcoin network after a connection is established, but this process has not completed yet.</string>
+=======
+             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -232,7 +236,11 @@
            <widget class="QLabel" name="labelTransactionsStatus">
             <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the gamingcoin network after a connection is established, but this process has not completed yet.</string>
+=======
+             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

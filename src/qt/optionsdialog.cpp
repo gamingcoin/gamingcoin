@@ -2,7 +2,11 @@
 #include "ui_optionsdialog.h"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -85,7 +89,11 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     ui->unit->setModel(new gamingcoinUnits(this));
+=======
+    ui->unit->setModel(new FreicoinUnits(this));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     ui->unit->setModel(new FreicoinUnits(this));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -136,7 +144,11 @@ void OptionsDialog::setMapper()
     /* Main */
     mapper->addMapping(ui->transactionFee, OptionsModel::Fee);
 <<<<<<< HEAD
+<<<<<<< HEAD
     mapper->addMapping(ui->gamingcoinAtStartup, OptionsModel::StartAtStartup);
+=======
+    mapper->addMapping(ui->freicoinAtStartup, OptionsModel::StartAtStartup);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     mapper->addMapping(ui->freicoinAtStartup, OptionsModel::StartAtStartup);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -212,7 +224,11 @@ void OptionsDialog::showRestartWarning_Proxy()
     if(!fRestartWarningDisplayed_Proxy)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting gamingcoin."), QMessageBox::Ok);
+=======
+        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting Freicoin."), QMessageBox::Ok);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting Freicoin."), QMessageBox::Ok);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -225,7 +241,11 @@ void OptionsDialog::showRestartWarning_Lang()
     if(!fRestartWarningDisplayed_Lang)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting gamingcoin."), QMessageBox::Ok);
+=======
+        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting Freicoin."), QMessageBox::Ok);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting Freicoin."), QMessageBox::Ok);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

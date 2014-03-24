@@ -1231,7 +1231,11 @@ bool Solver(const CScript& scriptPubKey, txnouttype& typeRet, vector<vector<unsi
         mTemplates.insert(make_pair(TX_PUBKEY, CScript() << OP_PUBKEY << OP_CHECKSIG));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // gamingcoin address tx, sender provides hash of pubkey, receiver provides signature and pubkey
+=======
+        // Freicoin address tx, sender provides hash of pubkey, receiver provides signature and pubkey
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         // Freicoin address tx, sender provides hash of pubkey, receiver provides signature and pubkey
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

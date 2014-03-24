@@ -1,15 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Source: GamingCoin
 Section: utils
 Priority: optional
 Maintainer: Gaming Coin <gmgcoin@gmail.com>
 Uploaders: Gaming Coin <gmgcoin@gmail.com>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Source: freicoin
 Section: utils
 Priority: optional
 Maintainer: Mark Friedenbach <mark@monetize.io>
 Uploaders: Mark Friedenbach <mark@monetize.io>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Build-Depends: debhelper,
  devscripts,
@@ -31,6 +37,7 @@ Build-Depends: debhelper,
  libgmp3-dev
 Standards-Version: 3.9.2
 <<<<<<< HEAD
+<<<<<<< HEAD
 Homepage: http://gamingcoin.com
 Vcs-Git: git://github.com/GamingCoin/GamingCoin.git
 Vcs-Browser: http://github.com/GamingCoin/GamingCoin
@@ -45,6 +52,8 @@ Description: peer-to-peer network based demurrage currency - daemon
  transact directly with each other, with the help of a P2P network to
  check for double-spending.  GamingCoin features built-in demurrage to
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Homepage: http://freico.in/
 Vcs-Git: git://github.com/freicoin/freicoin.git
 Vcs-Browser: http://github.com/freicoin/freicoin
@@ -58,12 +67,16 @@ Description: peer-to-peer network based demurrage currency - daemon
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.  Freicoin features built-in demurrage to
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
  encourage long-term thinking, low interest rates, and a high velocity
  of money.
  .
  Full transaction history is stored locally at each client.
  .
+<<<<<<< HEAD
 <<<<<<< HEAD
  This package provides GamingCoind, a combined daemon and CLI tool to
  interact with the daemon.
@@ -78,6 +91,8 @@ Description: peer-to-peer network based demurrage currency - Qt GUI
  transact directly with each other, with the help of a P2P network to
  check for double-spending.  GamingCoin features built-in demurrage to
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
  This package provides freicoind, a combined daemon and CLI tool to
  interact with the daemon.
 
@@ -90,6 +105,9 @@ Description: peer-to-peer network based demurrage currency - Qt GUI
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.  Freicoin features built-in demurrage to
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
  encourage long-term thinking, low interest rates, and a high velocity
  of money.
@@ -97,7 +115,11 @@ Description: peer-to-peer network based demurrage currency - Qt GUI
  Full transaction history is stored locally at each client.
  .
 <<<<<<< HEAD
+<<<<<<< HEAD
  This package provides GamingCoin-Qt, a GUI for GamingCoin based on Qt.
+=======
+ This package provides Freicoin-Qt, a GUI for Freicoin based on Qt.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
  This package provides Freicoin-Qt, a GUI for Freicoin based on Qt.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

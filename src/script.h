@@ -3,8 +3,13 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifndef H_gamingcoin_SCRIPT
 #define H_gamingcoin_SCRIPT
+=======
+#ifndef H_FREICOIN_SCRIPT
+#define H_FREICOIN_SCRIPT
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #ifndef H_FREICOIN_SCRIPT
 #define H_FREICOIN_SCRIPT
@@ -52,7 +57,11 @@ public:
  *  * CKeyID: TX_PUBKEYHASH destination
  *  * CScriptID: TX_SCRIPTHASH destination
 <<<<<<< HEAD
+<<<<<<< HEAD
  *  A CTxDestination is the internal data type encoded in a CgamingcoinAddress
+=======
+ *  A CTxDestination is the internal data type encoded in a CFreicoinAddress
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
  *  A CTxDestination is the internal data type encoded in a CFreicoinAddress
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -517,7 +526,11 @@ public:
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Pre-version-0.6, gamingcoin always counted CHECKMULTISIGs
+=======
+    // Pre-version-0.6, Freicoin always counted CHECKMULTISIGs
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Pre-version-0.6, Freicoin always counted CHECKMULTISIGs
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

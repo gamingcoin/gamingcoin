@@ -62,7 +62,11 @@ public:
             BOOST_FOREACH(const PAIRTYPE(CTxDestination, std::string)& item, wallet->mapAddressBook)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 const CgamingcoinAddress& address = item.first;
+=======
+                const CFreicoinAddress& address = item.first;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 const CFreicoinAddress& address = item.first;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -195,7 +199,11 @@ QVariant AddressTableModel::data(const QModelIndex &index, int role) const
         if(index.column() == Address)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             font = GUIUtil::gamingcoinAddressFont();
+=======
+            font = GUIUtil::freicoinAddressFont();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             font = GUIUtil::freicoinAddressFont();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -230,7 +238,11 @@ bool AddressTableModel::setData(const QModelIndex & index, const QVariant & valu
         {
         case Label:
 <<<<<<< HEAD
+<<<<<<< HEAD
             wallet->SetAddressBookName(CgamingcoinAddress(rec->address.toStdString()).Get(), value.toString().toStdString());
+=======
+            wallet->SetAddressBookName(CFreicoinAddress(rec->address.toStdString()).Get(), value.toString().toStdString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             wallet->SetAddressBookName(CFreicoinAddress(rec->address.toStdString()).Get(), value.toString().toStdString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -250,9 +262,15 @@ bool AddressTableModel::setData(const QModelIndex & index, const QVariant & valu
                     LOCK(wallet->cs_wallet);
                     // Remove old entry
 <<<<<<< HEAD
+<<<<<<< HEAD
                     wallet->DelAddressBookName(CgamingcoinAddress(rec->address.toStdString()).Get());
                     // Add new entry with new address
                     wallet->SetAddressBookName(CgamingcoinAddress(value.toString().toStdString()).Get(), rec->label.toStdString());
+=======
+                    wallet->DelAddressBookName(CFreicoinAddress(rec->address.toStdString()).Get());
+                    // Add new entry with new address
+                    wallet->SetAddressBookName(CFreicoinAddress(value.toString().toStdString()).Get(), rec->label.toStdString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                     wallet->DelAddressBookName(CFreicoinAddress(rec->address.toStdString()).Get());
                     // Add new entry with new address
@@ -314,7 +332,11 @@ QModelIndex AddressTableModel::index(int row, int column, const QModelIndex & pa
 void AddressTableModel::updateEntry(const QString &address, const QString &label, bool isMine, int status)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Update address book model from gamingcoin core
+=======
+    // Update address book model from Freicoin core
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Update address book model from Freicoin core
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -339,7 +361,11 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
         {
             LOCK(wallet->cs_wallet);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if(wallet->mapAddressBook.count(CgamingcoinAddress(strAddress).Get()))
+=======
+            if(wallet->mapAddressBook.count(CFreicoinAddress(strAddress).Get()))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             if(wallet->mapAddressBook.count(CFreicoinAddress(strAddress).Get()))
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -366,7 +392,11 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
             return QString();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         strAddress = CgamingcoinAddress(newKey.GetID()).ToString();
+=======
+        strAddress = CFreicoinAddress(newKey.GetID()).ToString();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         strAddress = CFreicoinAddress(newKey.GetID()).ToString();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -379,7 +409,11 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
     {
         LOCK(wallet->cs_wallet);
 <<<<<<< HEAD
+<<<<<<< HEAD
         wallet->SetAddressBookName(CgamingcoinAddress(strAddress).Get(), strLabel);
+=======
+        wallet->SetAddressBookName(CFreicoinAddress(strAddress).Get(), strLabel);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         wallet->SetAddressBookName(CFreicoinAddress(strAddress).Get(), strLabel);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -400,7 +434,11 @@ bool AddressTableModel::removeRows(int row, int count, const QModelIndex & paren
     {
         LOCK(wallet->cs_wallet);
 <<<<<<< HEAD
+<<<<<<< HEAD
         wallet->DelAddressBookName(CgamingcoinAddress(rec->address.toStdString()).Get());
+=======
+        wallet->DelAddressBookName(CFreicoinAddress(rec->address.toStdString()).Get());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         wallet->DelAddressBookName(CFreicoinAddress(rec->address.toStdString()).Get());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -415,7 +453,11 @@ QString AddressTableModel::labelForAddress(const QString &address) const
     {
         LOCK(wallet->cs_wallet);
 <<<<<<< HEAD
+<<<<<<< HEAD
         CgamingcoinAddress address_parsed(address.toStdString());
+=======
+        CFreicoinAddress address_parsed(address.toStdString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         CFreicoinAddress address_parsed(address.toStdString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

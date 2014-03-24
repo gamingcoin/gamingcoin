@@ -8,7 +8,11 @@ static const int MODEL_UPDATE_DELAY = 500;
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* gamingcoinGUI -- Size of icons in status bar */
+=======
+/* FreicoinGUI -- Size of icons in status bar */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /* FreicoinGUI -- Size of icons in status bar */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

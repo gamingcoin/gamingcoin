@@ -6,7 +6,11 @@
 //
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // These need to be macros, as version.cpp's and gamingcoin-qt.rc's voodoo requires it
+=======
+// These need to be macros, as version.cpp's and freicoin-qt.rc's voodoo requires it
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 // These need to be macros, as version.cpp's and freicoin-qt.rc's voodoo requires it
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -5,7 +5,11 @@
 #include "ui_interface.h"
 #include "init.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -27,7 +31,11 @@ static bool noui_ThreadSafeAskFee(const mpq& nFeeRequired, const std::string& st
 void noui_connect()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Connect gamingcoind signal handlers
+=======
+    // Connect freicoind signal handlers
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Connect freicoind signal handlers
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 GamingCoin (0.0.0+1alpha1~precise7) precise; urgency=low
   [Gaming Coin]
    
@@ -9,6 +10,8 @@ GamingCoin (0.0.0+1alpha1~precise7) precise; urgency=low
 
  -- Gaming Coin <gmgcoin@gmail.com>  Mon, 24 March 2014 17:42:51 -0700
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 freicoin (0.0.2~precise4) precise; urgency=high
 
   [Mark Friedenbach]
@@ -311,4 +314,7 @@ freicoin (0.0.0+1alpha1~precise7) precise; urgency=low
   * Initial release.
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 29 Aug 2012 12:56:07 -0700
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

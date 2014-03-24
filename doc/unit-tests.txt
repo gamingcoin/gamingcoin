@@ -1,21 +1,32 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Compiling/running gamingcoind unit tests
 --------------------------------------
 
 gamingcoind unit tests are in the src/test/ directory; they
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Compiling/running freicoind unit tests
 --------------------------------------
 
 freicoind unit tests are in the src/test/ directory; they
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 use the Boost::Test unit-testing framework.
 
 To compile and run the tests:
 cd src
 <<<<<<< HEAD
+<<<<<<< HEAD
 make -f makefile.unix test_gamingcoin  # Replace makefile.unix if you're not on unix
 ./test_gamingcoin   # Runs the unit tests
+=======
+make -f makefile.unix test_freicoin  # Replace makefile.unix if you're not on unix
+./test_freicoin   # Runs the unit tests
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 make -f makefile.unix test_freicoin  # Replace makefile.unix if you're not on unix
 ./test_freicoin   # Runs the unit tests
@@ -27,6 +38,7 @@ If all tests succeed the last line of output will be:
 To add more tests, add BOOST_AUTO_TEST_CASE functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections (the makefiles are
+<<<<<<< HEAD
 <<<<<<< HEAD
 set up to add test/*.cpp to test_gamingcoin automatically).
 
@@ -45,6 +57,8 @@ make
 To add more tests, add them to the src/qt/test/ directory,
 the src/qt/test/test_main.cpp file, and gamingcoin-qt.pro.
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 set up to add test/*.cpp to test_freicoin automatically).
 
 
@@ -61,4 +75,7 @@ make
 
 To add more tests, add them to the src/qt/test/ directory,
 the src/qt/test/test_main.cpp file, and freicoin-qt.pro.
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

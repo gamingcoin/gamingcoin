@@ -51,7 +51,11 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 CScript COINBASE_FLAGS;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const string strMessageMagic = "gamingcoin Signed Message:\n";
+=======
+const string strMessageMagic = "Freicoin Signed Message:\n";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 const string strMessageMagic = "Freicoin Signed Message:\n";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -988,6 +992,7 @@ mpq static GetInitialDistributionAmount(int nHeight)
 CBudget static GetInitialDistributionBudget(int nHeight)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     static CgamingcoinAddress vAddresses[320] = {
         CgamingcoinAddress("1DCyWRmTXB9goqA4Zb88nU1Q8snA7d7n4x"),
         CgamingcoinAddress("1LoFvV5YJsSMkpyPLizqyWH8KAkevV2XwJ"),
@@ -1310,6 +1315,8 @@ CBudget static GetInitialDistributionBudget(int nHeight)
         CgamingcoinAddress("1PVKsqeVqM4B2ccq915GHeK3aDeruStr24"),
         CgamingcoinAddress("1PKNQqSuPknZ1PaqKkRqa9qYujWKL9KQ7E")
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     static CFreicoinAddress vAddresses[320] = {
         CFreicoinAddress("1DCyWRmTXB9goqA4Zb88nU1Q8snA7d7n4x"),
         CFreicoinAddress("1LoFvV5YJsSMkpyPLizqyWH8KAkevV2XwJ"),
@@ -1631,6 +1638,9 @@ CBudget static GetInitialDistributionBudget(int nHeight)
         CFreicoinAddress("1M3wUX9YYrcVSSw6Tncdoic3Fj13okQ63u"),
         CFreicoinAddress("1PVKsqeVqM4B2ccq915GHeK3aDeruStr24"),
         CFreicoinAddress("1PKNQqSuPknZ1PaqKkRqa9qYujWKL9KQ7E")
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     };
 
@@ -1670,6 +1680,7 @@ CBudget static GetTransactionFeeBudget(int nHeight)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 567 * COIN;
@@ -1685,6 +1696,8 @@ static const int64 nTargetTimespan = 86400; // 1 day in secs
 static const int64 nTargetSpacing = 120; // secs x block
 static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 300 seconds
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 mpq static GetBlockValue(int nHeight, const mpq& nFees)
 {
     return GetInitialDistributionAmount(nHeight) +
@@ -1696,6 +1709,9 @@ static const int64 nOriginalInterval = 2016;
 static const int64 nFilteredInterval =    9;
 static const int64 nOriginalTargetTimespan = nOriginalInterval * nTargetSpacing; // two weeks
 static const int64 nFilteredTargetTimespan = nFilteredInterval * nTargetSpacing; // 1.5 hrs
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
 //
@@ -2171,7 +2187,11 @@ bool CTransaction::ConnectInputs(MapPrevTx inputs,
     // Take over previous transactions' spent pointers
     // fBlock is true when this is called from AcceptBlock when a new best-block is added to the blockchain
 <<<<<<< HEAD
+<<<<<<< HEAD
     // fMiner is true when called from the internal gamingcoin miner
+=======
+    // fMiner is true when called from the internal freicoin miner
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // fMiner is true when called from the internal freicoin miner
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -3009,7 +3029,11 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
 <<<<<<< HEAD
+<<<<<<< HEAD
         uiInterface.ThreadSafeMessageBox(strMessage, "gamingcoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+=======
+        uiInterface.ThreadSafeMessageBox(strMessage, "Freicoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         uiInterface.ThreadSafeMessageBox(strMessage, "Freicoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -3161,7 +3185,11 @@ Let this be the awaited dawn.";
             << OP_EQUALVERIFY
             << OP_CHECKSIG;
 <<<<<<< HEAD
+<<<<<<< HEAD
         const char* pszMessage4 = "Ich w\xc3\xbc""nsche gamingcoin viel Erfolg zum Nutzen der 99 Prozent!";
+=======
+        const char* pszMessage4 = "Ich w\xc3\xbc""nsche Freicoin viel Erfolg zum Nutzen der 99 Prozent!";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         const char* pszMessage4 = "Ich w\xc3\xbc""nsche Freicoin viel Erfolg zum Nutzen der 99 Prozent!";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -3219,7 +3247,11 @@ Let this be the awaited dawn.";
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
         block.nTime    = 1395691794;
+=======
+        block.nTime    = 1356123600;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         block.nTime    = 1356123600;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -3229,7 +3261,11 @@ Let this be the awaited dawn.";
         if (fTestNet)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             block.nTime    = 1395691794;
+=======
+            block.nTime    = 1356123600;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             block.nTime    = 1356123600;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -4420,7 +4456,11 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 //////////////////////////////////////////////////////////////////////////////
 //
 <<<<<<< HEAD
+<<<<<<< HEAD
 // gamingcoinMiner
+=======
+// FreicoinMiner
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 // FreicoinMiner
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -4919,7 +4959,11 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
     //// debug print
 <<<<<<< HEAD
+<<<<<<< HEAD
     printf("gamingcoinMiner:\n");
+=======
+    printf("FreicoinMiner:\n");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     printf("FreicoinMiner:\n");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -4932,7 +4976,11 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
 <<<<<<< HEAD
+<<<<<<< HEAD
             return error("gamingcoinMiner : generated block is stale");
+=======
+            return error("FreicoinMiner : generated block is stale");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             return error("FreicoinMiner : generated block is stale");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -4949,7 +4997,11 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         if (!ProcessBlock(NULL, pblock))
 <<<<<<< HEAD
+<<<<<<< HEAD
             return error("gamingcoinMiner : ProcessBlock, block not accepted");
+=======
+            return error("FreicoinMiner : ProcessBlock, block not accepted");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             return error("FreicoinMiner : ProcessBlock, block not accepted");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -4958,6 +5010,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     return true;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 void static ThreadgamingcoinMiner(void* parg);
 
@@ -4973,6 +5026,8 @@ void static gamingcoinMiner(CWallet *pwallet)
     // Make this thread recognisable as the mining thread
     RenameThread("gamingcoin-miner");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 void static ThreadFreicoinMiner(void* parg);
 
 static bool fGenerateFreicoins = false;
@@ -4986,6 +5041,9 @@ void static FreicoinMiner(CWallet *pwallet)
 
     // Make this thread recognisable as the mining thread
     RenameThread("freicoin-miner");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     // Each thread has its own key and counter
@@ -4993,7 +5051,11 @@ void static FreicoinMiner(CWallet *pwallet)
     unsigned int nExtraNonce = 0;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     while (fGenerategamingcoins)
+=======
+    while (fGenerateFreicoins)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     while (fGenerateFreicoins)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -5006,7 +5068,11 @@ void static FreicoinMiner(CWallet *pwallet)
             if (fShutdown)
                 return;
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!fGenerategamingcoins)
+=======
+            if (!fGenerateFreicoins)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             if (!fGenerateFreicoins)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -5026,7 +5092,11 @@ void static FreicoinMiner(CWallet *pwallet)
         IncrementExtraNonce(pblock.get(), pindexPrev, nExtraNonce);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         printf("Running gamingcoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+=======
+        printf("Running FreicoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         printf("Running FreicoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -5115,7 +5185,11 @@ void static FreicoinMiner(CWallet *pwallet)
             if (fShutdown)
                 return;
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!fGenerategamingcoins)
+=======
+            if (!fGenerateFreicoins)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             if (!fGenerateFreicoins)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -5145,7 +5219,11 @@ void static FreicoinMiner(CWallet *pwallet)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 void static ThreadgamingcoinMiner(void* parg)
+=======
+void static ThreadFreicoinMiner(void* parg)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 void static ThreadFreicoinMiner(void* parg)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -5155,7 +5233,11 @@ void static ThreadFreicoinMiner(void* parg)
     {
         vnThreadsRunning[THREAD_MINER]++;
 <<<<<<< HEAD
+<<<<<<< HEAD
         gamingcoinMiner(pwallet);
+=======
+        FreicoinMiner(pwallet);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         FreicoinMiner(pwallet);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -5164,20 +5246,27 @@ void static ThreadFreicoinMiner(void* parg)
     catch (std::exception& e) {
         vnThreadsRunning[THREAD_MINER]--;
 <<<<<<< HEAD
+<<<<<<< HEAD
         PrintException(&e, "ThreadgamingcoinMiner()");
     } catch (...) {
         vnThreadsRunning[THREAD_MINER]--;
         PrintException(NULL, "ThreadgamingcoinMiner()");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         PrintException(&e, "ThreadFreicoinMiner()");
     } catch (...) {
         vnThreadsRunning[THREAD_MINER]--;
         PrintException(NULL, "ThreadFreicoinMiner()");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     }
     nHPSTimerStart = 0;
     if (vnThreadsRunning[THREAD_MINER] == 0)
         dHashesPerSec = 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
     printf("ThreadgamingcoinMiner exiting, %d threads remaining\n", vnThreadsRunning[THREAD_MINER]);
 }
@@ -5190,6 +5279,8 @@ void Generategamingcoins(bool fGenerate, CWallet* pwallet)
     if (nLimitProcessors == 0)
         fGenerategamingcoins = false;
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     printf("ThreadFreicoinMiner exiting, %d threads remaining\n", vnThreadsRunning[THREAD_MINER]);
 }
 
@@ -5200,6 +5291,9 @@ void GenerateFreicoins(bool fGenerate, CWallet* pwallet)
     nLimitProcessors = GetArg("-genproclimit", -1);
     if (nLimitProcessors == 0)
         fGenerateFreicoins = false;
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     fLimitProcessors = (nLimitProcessors != -1);
 
@@ -5213,17 +5307,23 @@ void GenerateFreicoins(bool fGenerate, CWallet* pwallet)
             nProcessors = nLimitProcessors;
         int nAddThreads = nProcessors - vnThreadsRunning[THREAD_MINER];
 <<<<<<< HEAD
+<<<<<<< HEAD
         printf("Starting %d gamingcoinMiner threads\n", nAddThreads);
         for (int i = 0; i < nAddThreads; i++)
         {
             if (!NewThread(ThreadgamingcoinMiner, pwallet))
                 printf("Error: NewThread(ThreadgamingcoinMiner) failed\n");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         printf("Starting %d FreicoinMiner threads\n", nAddThreads);
         for (int i = 0; i < nAddThreads; i++)
         {
             if (!NewThread(ThreadFreicoinMiner, pwallet))
                 printf("Error: NewThread(ThreadFreicoinMiner) failed\n");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             Sleep(10);
         }

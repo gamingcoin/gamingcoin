@@ -47,9 +47,15 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address))
                 {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // Received by gamingcoin Address
                     sub.type = TransactionRecord::RecvWithAddress;
                     sub.address = CgamingcoinAddress(address).ToString();
+=======
+                    // Received by Freicoin Address
+                    sub.type = TransactionRecord::RecvWithAddress;
+                    sub.address = CFreicoinAddress(address).ToString();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                     // Received by Freicoin Address
                     sub.type = TransactionRecord::RecvWithAddress;
@@ -118,9 +124,15 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                 if (ExtractDestination(txout.scriptPubKey, address))
                 {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // Sent to gamingcoin Address
                     sub.type = TransactionRecord::SendToAddress;
                     sub.address = CgamingcoinAddress(address).ToString();
+=======
+                    // Sent to Freicoin Address
+                    sub.type = TransactionRecord::SendToAddress;
+                    sub.address = CFreicoinAddress(address).ToString();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                     // Sent to Freicoin Address
                     sub.type = TransactionRecord::SendToAddress;

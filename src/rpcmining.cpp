@@ -7,7 +7,11 @@
 #include "db.h"
 #include "init.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -50,7 +54,11 @@ Value setgenerate(const Array& params, bool fHelp)
     mapArgs["-gen"] = (fGenerate ? "1" : "0");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     Generategamingcoins(fGenerate, pwalletMain);
+=======
+    GenerateFreicoins(fGenerate, pwalletMain);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     GenerateFreicoins(fGenerate, pwalletMain);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -107,15 +115,21 @@ Value getwork(const Array& params, bool fHelp)
 
     if (vNodes.empty())
 <<<<<<< HEAD
+<<<<<<< HEAD
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "gamingcoin is not connected!");
 
     if (IsInitialBlockDownload())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "gamingcoin is downloading blocks...");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Freicoin is not connected!");
 
     if (IsInitialBlockDownload())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Freicoin is downloading blocks...");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     typedef map<uint256, pair<CBlock*, CScript> > mapNewBlock_t;
@@ -256,15 +270,21 @@ Value getblocktemplate(const Array& params, bool fHelp)
 
     if (vNodes.empty())
 <<<<<<< HEAD
+<<<<<<< HEAD
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "gamingcoin is not connected!");
 
     if (IsInitialBlockDownload())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "gamingcoin is downloading blocks...");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Freicoin is not connected!");
 
     if (IsInitialBlockDownload())
         throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Freicoin is downloading blocks...");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     static CReserveKey reservekey(pwalletMain);

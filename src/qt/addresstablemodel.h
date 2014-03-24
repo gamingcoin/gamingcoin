@@ -21,7 +21,11 @@ public:
     enum ColumnIndex {
         Label = 0,   /**< User specified label */
 <<<<<<< HEAD
+<<<<<<< HEAD
         Address = 1  /**< gamingcoin address */
+=======
+        Address = 1  /**< Freicoin address */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         Address = 1  /**< Freicoin address */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

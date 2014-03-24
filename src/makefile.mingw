@@ -67,7 +67,11 @@ OBJS= \
     obj/net.o \
     obj/protocol.o \
 <<<<<<< HEAD
+<<<<<<< HEAD
     obj/gamingcoinrpc.o \
+=======
+    obj/freicoinrpc.o \
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     obj/freicoinrpc.o \
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -86,7 +90,11 @@ OBJS= \
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 all: gamingcoind.exe
+=======
+all: freicoind.exe
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 all: freicoind.exe
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -98,7 +106,11 @@ obj/%.o: %.cpp $(HEADERS)
 	g++ -c $(CFLAGS) -o $@ $<
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 gamingcoind.exe: $(OBJS:obj/%=obj/%)
+=======
+freicoind.exe: $(OBJS:obj/%=obj/%)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 freicoind.exe: $(OBJS:obj/%=obj/%)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -110,17 +122,23 @@ obj-test/%.o: test/%.cpp $(HEADERS)
 	g++ -c $(TESTDEFS) $(CFLAGS) -o $@ $<
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 test_gamingcoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework $(LIBS)
 
 clean:
 	-del /Q gamingcoind test_gamingcoin
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 test_freicoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework $(LIBS)
 
 clean:
 	-del /Q freicoind test_freicoin
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 	-del /Q obj\*
 	-del /Q obj-test\*

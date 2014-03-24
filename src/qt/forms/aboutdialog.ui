@@ -12,7 +12,11 @@
   </property>
   <property name="windowTitle">
 <<<<<<< HEAD
+<<<<<<< HEAD
    <string>About gamingcoin</string>
+=======
+   <string>About Freicoin</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
    <string>About Freicoin</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -28,7 +32,11 @@
      </property>
      <property name="pixmap">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pixmap resource="../gamingcoin.qrc">:/images/about</pixmap>
+=======
+      <pixmap resource="../freicoin.qrc">:/images/about</pixmap>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
       <pixmap resource="../freicoin.qrc">:/images/about</pixmap>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -59,7 +67,11 @@
          </property>
          <property name="text">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>&lt;b&gt;gamingcoin&lt;/b&gt; version</string>
+=======
+          <string>&lt;b&gt;Freicoin&lt;/b&gt; version</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <string>&lt;b&gt;Freicoin&lt;/b&gt; version</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -105,6 +117,7 @@
        <property name="text">
         <string>Copyright © 2009-2012 Bitcoin developers
 <<<<<<< HEAD
+<<<<<<< HEAD
 Copyright © 2011-2012 gamingcoin developers
 
 The conceptual marriage of Gesell's Freigeld with Bitcoin is due to one individual without whom this project would never have started: Jorge Timón. The initial release would not have been possible without further contributions from developers Mark Friedenbach, Matthew Redmond, Aaron Blumenshine, and an anonymous contributor.
@@ -113,6 +126,8 @@ The initial development of gamingcoin was made possible through generous financi
 
 Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that gamingcoin is built.</string>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Copyright © 2011-2012 Freicoin developers
 
 The conceptual marriage of Gesell's Freigeld with Bitcoin is due to one individual without whom this project would never have started: Jorge Timón. The initial release would not have been possible without further contributions from developers Mark Friedenbach, Matthew Redmond, Aaron Blumenshine, and an anonymous contributor.
@@ -120,6 +135,9 @@ The conceptual marriage of Gesell's Freigeld with Bitcoin is due to one individu
 The initial development of Freicoin was made possible through generous financial support from Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O'Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, and anonymous supporters.
 
 Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that Freicoin is built.</string>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
        </property>
        <property name="wordWrap">
@@ -180,7 +198,11 @@ This product includes software developed by the OpenSSL Project for use in the O
  </widget>
  <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <include location="../gamingcoin.qrc"/>
+=======
+  <include location="../freicoin.qrc"/>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   <include location="../freicoin.qrc"/>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

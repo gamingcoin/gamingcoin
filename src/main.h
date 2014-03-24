@@ -3,8 +3,13 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifndef gamingcoin_MAIN_H
 #define gamingcoin_MAIN_H
+=======
+#ifndef FREICOIN_MAIN_H
+#define FREICOIN_MAIN_H
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #ifndef FREICOIN_MAIN_H
 #define FREICOIN_MAIN_H
@@ -36,7 +41,11 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const mpq MIN_TX_FEE = mpq("50000/1");
 static const mpq MIN_RELAY_TX_FEE = mpq("10000/1");
 <<<<<<< HEAD
+<<<<<<< HEAD
 static const int64 I64_MAX_MONEY = 49000000;
+=======
+static const int64 I64_MAX_MONEY = 9999999999999999LL;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 static const int64 I64_MAX_MONEY = 9999999999999999LL;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -116,7 +125,11 @@ bool ProcessMessages(CNode* pfrom);
 bool SendMessages(CNode* pto, bool fSendTrickle);
 bool LoadExternalBlockFile(FILE* fileIn);
 <<<<<<< HEAD
+<<<<<<< HEAD
 void Generategamingcoins(bool fGenerate, CWallet* pwallet);
+=======
+void GenerateFreicoins(bool fGenerate, CWallet* pwallet);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 void GenerateFreicoins(bool fGenerate, CWallet* pwallet);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -561,7 +574,11 @@ public:
     unsigned int GetP2SHSigOpCount(const MapPrevTx& mapInputs) const;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** Amount of gamingcoins spent by this transaction.
+=======
+    /** Amount of freicoins spent by this transaction.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     /** Amount of freicoins spent by this transaction.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -580,7 +597,11 @@ public:
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** Amount of gamingcoins coming in to this transaction
+=======
+    /** Amount of freicoins coming in to this transaction
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     /** Amount of freicoins coming in to this transaction
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -598,7 +619,11 @@ public:
         // Large (in bytes) low-priority (new, small-coin) transactions
         // need a fee.
 <<<<<<< HEAD
+<<<<<<< HEAD
         return dPriority > COIN * 720 / 567;
+=======
+        return dPriority > COIN * 144 / 250;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         return dPriority > COIN * 144 / 250;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

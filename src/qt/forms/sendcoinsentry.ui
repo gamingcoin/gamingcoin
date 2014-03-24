@@ -51,7 +51,11 @@
    </item>
    <item row="5" column="1">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <widget class="gamingcoinAmountField" name="payAmount"/>
+=======
+    <widget class="FreicoinAmountField" name="payAmount"/>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     <widget class="FreicoinAmountField" name="payAmount"/>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -111,7 +115,11 @@
        </property>
        <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <iconset resource="../gamingcoin.qrc">
+=======
+        <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -132,7 +140,11 @@
        </property>
        <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <iconset resource="../gamingcoin.qrc">
+=======
+        <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -153,7 +165,11 @@
        </property>
        <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <iconset resource="../gamingcoin.qrc">
+=======
+        <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -171,9 +187,15 @@
  <customwidgets>
   <customwidget>
 <<<<<<< HEAD
+<<<<<<< HEAD
    <class>gamingcoinAmountField</class>
    <extends>QLineEdit</extends>
    <header>gamingcoinamountfield.h</header>
+=======
+   <class>FreicoinAmountField</class>
+   <extends>QLineEdit</extends>
+   <header>freicoinamountfield.h</header>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
    <class>FreicoinAmountField</class>
    <extends>QLineEdit</extends>
@@ -189,7 +211,11 @@
  </customwidgets>
  <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <include location="../gamingcoin.qrc"/>
+=======
+  <include location="../freicoin.qrc"/>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   <include location="../freicoin.qrc"/>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -141,7 +141,11 @@
         </item>
         <item row="0" column="1">
 <<<<<<< HEAD
+<<<<<<< HEAD
          <widget class="gamingcoinAmountField" name="lnReqAmount">
+=======
+         <widget class="FreicoinAmountField" name="lnReqAmount">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
          <widget class="FreicoinAmountField" name="lnReqAmount">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -190,9 +194,15 @@
  <customwidgets>
   <customwidget>
 <<<<<<< HEAD
+<<<<<<< HEAD
    <class>gamingcoinAmountField</class>
    <extends>QSpinBox</extends>
    <header>gamingcoinamountfield.h</header>
+=======
+   <class>FreicoinAmountField</class>
+   <extends>QSpinBox</extends>
+   <header>freicoinamountfield.h</header>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
    <class>FreicoinAmountField</class>
    <extends>QSpinBox</extends>

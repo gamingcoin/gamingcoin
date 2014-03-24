@@ -2,7 +2,11 @@
 #include "ui_qrcodedialog.h"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -88,7 +92,11 @@ void QRCodeDialog::genCode()
 QString QRCodeDialog::getURI()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     QString ret = QString("gamingcoin:%1").arg(address);
+=======
+    QString ret = QString("freicoin:%1").arg(address);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     QString ret = QString("freicoin:%1").arg(address);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -102,7 +110,11 @@ QString QRCodeDialog::getURI()
         {
             // even if we allow a non FRC unit input in lnReqAmount, we generate the URI with FRC as unit (as defined in BIP21)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ret += QString("?amount=%1").arg(gamingcoinUnits::format(gamingcoinUnits::FRC, ui->lnReqAmount->valueAsMpq()));
+=======
+            ret += QString("?amount=%1").arg(FreicoinUnits::format(FreicoinUnits::FRC, ui->lnReqAmount->valueAsMpq()));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             ret += QString("?amount=%1").arg(FreicoinUnits::format(FreicoinUnits::FRC, ui->lnReqAmount->valueAsMpq()));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -43,17 +43,23 @@ static bool ipcScanCmd(int argc, char *argv[], bool fRelay)
     for (int i = 1; i < argc; i++)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (boost::algorithm::istarts_with(argv[i], "gamingcoin:"))
         {
             const char *strURI = argv[i];
             try {
                 boost::interprocess::message_queue mq(boost::interprocess::open_only, gamingcoinURI_QUEUE_NAME);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         if (boost::algorithm::istarts_with(argv[i], "freicoin:"))
         {
             const char *strURI = argv[i];
             try {
                 boost::interprocess::message_queue mq(boost::interprocess::open_only, FREICOINURI_QUEUE_NAME);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
                 if (mq.try_send(strURI, strlen(strURI), 0))
                     fSent = true;
@@ -84,7 +90,11 @@ static void ipcThread(void* pArg)
 {
     // Make this thread recognisable as the GUI-IPC thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-gui-ipc");
+=======
+    RenameThread("freicoin-gui-ipc");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-gui-ipc");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -125,7 +135,11 @@ static void ipcThread2(void* pArg)
 
     // Remove message queue
 <<<<<<< HEAD
+<<<<<<< HEAD
     message_queue::remove(gamingcoinURI_QUEUE_NAME);
+=======
+    message_queue::remove(FREICOINURI_QUEUE_NAME);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     message_queue::remove(FREICOINURI_QUEUE_NAME);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -142,9 +156,15 @@ void ipcInit(int argc, char *argv[])
 
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
         mq = new message_queue(open_or_create, gamingcoinURI_QUEUE_NAME, 2, MAX_URI_LENGTH);
 
         // Make sure we don't lose any gamingcoin: URIs
+=======
+        mq = new message_queue(open_or_create, FREICOINURI_QUEUE_NAME, 2, MAX_URI_LENGTH);
+
+        // Make sure we don't lose any freicoin: URIs
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         mq = new message_queue(open_or_create, FREICOINURI_QUEUE_NAME, 2, MAX_URI_LENGTH);
 
@@ -162,17 +182,23 @@ void ipcInit(int argc, char *argv[])
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Make sure only one gamingcoin instance is listening
         message_queue::remove(gamingcoinURI_QUEUE_NAME);
         delete mq;
 
         mq = new message_queue(open_or_create, gamingcoinURI_QUEUE_NAME, 2, MAX_URI_LENGTH);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         // Make sure only one freicoin instance is listening
         message_queue::remove(FREICOINURI_QUEUE_NAME);
         delete mq;
 
         mq = new message_queue(open_or_create, FREICOINURI_QUEUE_NAME, 2, MAX_URI_LENGTH);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     }
     catch (interprocess_exception &ex) {

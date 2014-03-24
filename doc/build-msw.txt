@@ -8,7 +8,11 @@ software written by Thomas Bernard.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See readme-qt.rst for instructions on building gamingcoin-Qt, the
+=======
+See readme-qt.rst for instructions on building Freicoin-Qt, the
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 See readme-qt.rst for instructions on building Freicoin-Qt, the
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -87,6 +91,7 @@ mkdir miniupnpc
 cp *.h miniupnpc/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 gamingcoin
 --------
 DOS prompt:
@@ -94,10 +99,15 @@ cd \gamingcoin\src
 mingw32-make -f makefile.mingw
 strip gamingcoind.exe
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Freicoin
 --------
 DOS prompt:
 cd \freicoin\src
 mingw32-make -f makefile.mingw
 strip freicoind.exe
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

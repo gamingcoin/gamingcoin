@@ -2,7 +2,11 @@
 
 #include "guiutil.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -91,7 +95,11 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                                 strHTML += "<b>" + tr("From") + ":</b> " + tr("unknown") + "<br>";
                                 strHTML += "<b>" + tr("To") + ":</b> ";
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 strHTML += GUIUtil::HtmlEscape(CgamingcoinAddress(address).ToString());
+=======
+                                strHTML += GUIUtil::HtmlEscape(CFreicoinAddress(address).ToString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                                 strHTML += GUIUtil::HtmlEscape(CFreicoinAddress(address).ToString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -117,7 +125,11 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
             std::string strAddress = wtx.mapValue["to"];
             strHTML += "<b>" + tr("To") + ":</b> ";
 <<<<<<< HEAD
+<<<<<<< HEAD
             CTxDestination dest = CgamingcoinAddress(strAddress).Get();
+=======
+            CTxDestination dest = CFreicoinAddress(strAddress).Get();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             CTxDestination dest = CFreicoinAddress(strAddress).Get();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -140,7 +152,11 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
             strHTML += "<b>" + tr("Credit") + ":</b> ";
             if (wtx.IsInMainChain())
 <<<<<<< HEAD
+<<<<<<< HEAD
                 strHTML += gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, nUnmatured)+ " (" + tr("matures in %n more block(s)", "", wtx.GetBlocksToMaturity()) + ")";
+=======
+                strHTML += FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nUnmatured)+ " (" + tr("matures in %n more block(s)", "", wtx.GetBlocksToMaturity()) + ")";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 strHTML += FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nUnmatured)+ " (" + tr("matures in %n more block(s)", "", wtx.GetBlocksToMaturity()) + ")";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -154,7 +170,11 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
             // Credit
             //
 <<<<<<< HEAD
+<<<<<<< HEAD
             strHTML += "<b>" + tr("Credit") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, nNet) + "<br>";
+=======
+            strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nNet) + "<br>";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nNet) + "<br>";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -189,7 +209,11 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                             if (wallet->mapAddressBook.count(address) && !wallet->mapAddressBook[address].empty())
                                 strHTML += GUIUtil::HtmlEscape(wallet->mapAddressBook[address]) + " ";
 <<<<<<< HEAD
+<<<<<<< HEAD
                             strHTML += GUIUtil::HtmlEscape(CgamingcoinAddress(address).ToString());
+=======
+                            strHTML += GUIUtil::HtmlEscape(CFreicoinAddress(address).ToString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                             strHTML += GUIUtil::HtmlEscape(CFreicoinAddress(address).ToString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -198,7 +222,11 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                     strHTML += "<b>" + tr("Debit") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, -GetPresentValue(wtx, txout, wtx.nRefHeight)) + "<br>";
+=======
+                    strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -GetPresentValue(wtx, txout, wtx.nRefHeight)) + "<br>";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                     strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -GetPresentValue(wtx, txout, wtx.nRefHeight)) + "<br>";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -210,8 +238,13 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                     mpq nChange = wtx.GetChange(wtx.nRefHeight);
                     mpq nValue = nCredit - nChange;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     strHTML += "<b>" + tr("Debit") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, -nValue) + "<br>";
                     strHTML += "<b>" + tr("Credit") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, nValue) + "<br>";
+=======
+                    strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -nValue) + "<br>";
+                    strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nValue) + "<br>";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                     strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -nValue) + "<br>";
                     strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nValue) + "<br>";
@@ -221,7 +254,11 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                 mpq nTxFee = nDebit - wtx.GetValueOut();
                 if (nTxFee > 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
                     strHTML += "<b>" + tr("Transaction fee") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, -nTxFee) + "<br>";
+=======
+                    strHTML += "<b>" + tr("Transaction fee") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -nTxFee) + "<br>";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                     strHTML += "<b>" + tr("Transaction fee") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -nTxFee) + "<br>";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -234,6 +271,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                 BOOST_FOREACH(const CTxIn& txin, wtx.vin)
                     if (wallet->IsMine(txin))
 <<<<<<< HEAD
+<<<<<<< HEAD
                         strHTML += "<b>" + tr("Debit") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, -wallet->GetDebit(txin,wtx.nRefHeight)) + "<br>";
                 BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                     if (wallet->IsMine(txout))
@@ -243,6 +281,8 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
 
         strHTML += "<b>" + tr("Net amount") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, nNet, true) + "<br>";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
                         strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -wallet->GetDebit(txin,wtx.nRefHeight)) + "<br>";
                 BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                     if (wallet->IsMine(txout))
@@ -251,6 +291,9 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
         }
 
         strHTML += "<b>" + tr("Net amount") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nNet, true) + "<br>";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
         //
@@ -277,15 +320,21 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
             BOOST_FOREACH(const CTxIn& txin, wtx.vin)
                 if(wallet->IsMine(txin))
 <<<<<<< HEAD
+<<<<<<< HEAD
                     strHTML += "<b>" + tr("Debit") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, -wallet->GetDebit(txin,wtx.nRefHeight)) + "<br>";
             BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                 if(wallet->IsMine(txout))
                     strHTML += "<b>" + tr("Credit") + ":</b> " + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, wallet->GetCredit(wtx,txout,wtx.nRefHeight)) + "<br>";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
                     strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -wallet->GetDebit(txin,wtx.nRefHeight)) + "<br>";
             BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                 if(wallet->IsMine(txout))
                     strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, wallet->GetCredit(wtx,txout,wtx.nRefHeight)) + "<br>";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
             strHTML += "<br><b>" + tr("Transaction") + ":</b><br>";
@@ -315,9 +364,15 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                                 if (wallet->mapAddressBook.count(address) && !wallet->mapAddressBook[address].empty())
                                     strHTML += GUIUtil::HtmlEscape(wallet->mapAddressBook[address]) + " ";
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 strHTML += QString::fromStdString(CgamingcoinAddress(address).ToString());
                             }
                             strHTML = strHTML + " " + tr("Amount") + "=" + gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, GetPresentValue(wtx, vout, wtx.nRefHeight));
+=======
+                                strHTML += QString::fromStdString(CFreicoinAddress(address).ToString());
+                            }
+                            strHTML = strHTML + " " + tr("Amount") + "=" + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, GetPresentValue(wtx, vout, wtx.nRefHeight));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                                 strHTML += QString::fromStdString(CFreicoinAddress(address).ToString());
                             }

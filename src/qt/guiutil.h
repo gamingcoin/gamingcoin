@@ -16,7 +16,11 @@ QT_END_NAMESPACE
 class SendCoinsRecipient;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Utility functions used by the gamingcoin Qt UI.
+=======
+/** Utility functions used by the Freicoin Qt UI.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** Utility functions used by the Freicoin Qt UI.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -28,8 +32,13 @@ namespace GUIUtil
     QString dateTimeStr(qint64 nTime);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Render gamingcoin addresses in monospace font
     QFont gamingcoinAddressFont();
+=======
+    // Render Freicoin addresses in monospace font
+    QFont freicoinAddressFont();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Render Freicoin addresses in monospace font
     QFont freicoinAddressFont();
@@ -40,15 +49,21 @@ namespace GUIUtil
     void setupAmountWidget(QLineEdit *widget, QWidget *parent);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Parse "gamingcoin:" URI into recipient object, return true on successful parsing
     // See gamingcoin URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
     bool parsegamingcoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parsegamingcoinURI(QString uri, SendCoinsRecipient *out);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     // Parse "freicoin:" URI into recipient object, return true on successful parsing
     // See Freicoin URI definition discussion here: https://bitcointalk.org/index.php?topic=33490.0
     bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseFreicoinURI(QString uri, SendCoinsRecipient *out);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     // HTML escaping for rich text controls
@@ -112,7 +127,11 @@ namespace GUIUtil
     bool SetStartOnSystemStartup(bool fAutoStart);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** Help message for gamingcoin-Qt, shown with --help. */
+=======
+    /** Help message for Freicoin-Qt, shown with --help. */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     /** Help message for Freicoin-Qt, shown with --help. */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

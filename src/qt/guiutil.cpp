@@ -1,8 +1,14 @@
 #include "guiutil.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinaddressvalidator.h"
 #include "walletmodel.h"
 #include "gamingcoinunits.h"
+=======
+#include "freicoinaddressvalidator.h"
+#include "walletmodel.h"
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinaddressvalidator.h"
 #include "walletmodel.h"
@@ -59,7 +65,11 @@ QString dateTimeStr(qint64 nTime)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 QFont gamingcoinAddressFont()
+=======
+QFont freicoinAddressFont()
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 QFont freicoinAddressFont()
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -72,9 +82,15 @@ QFont freicoinAddressFont()
 void setupAddressWidget(QLineEdit *widget, QWidget *parent)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     widget->setMaxLength(gamingcoinAddressValidator::MaxAddressLength);
     widget->setValidator(new gamingcoinAddressValidator(parent));
     widget->setFont(gamingcoinAddressFont());
+=======
+    widget->setMaxLength(FreicoinAddressValidator::MaxAddressLength);
+    widget->setValidator(new FreicoinAddressValidator(parent));
+    widget->setFont(freicoinAddressFont());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     widget->setMaxLength(FreicoinAddressValidator::MaxAddressLength);
     widget->setValidator(new FreicoinAddressValidator(parent));
@@ -92,9 +108,15 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 bool parsegamingcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     if(uri.scheme() != QString("gamingcoin"))
+=======
+bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
+{
+    if(uri.scheme() != QString("freicoin"))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
@@ -125,7 +147,11 @@ bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
             if(!i->second.isEmpty())
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if(!gamingcoinUnits::parse(gamingcoinUnits::FRC, i->second, &rv.amount))
+=======
+                if(!FreicoinUnits::parse(FreicoinUnits::FRC, i->second, &rv.amount))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 if(!FreicoinUnits::parse(FreicoinUnits::FRC, i->second, &rv.amount))
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -147,6 +173,7 @@ bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 bool parsegamingcoinURI(QString uri, SendCoinsRecipient *out)
 {
     // Convert gamingcoin:// to gamingcoin:
@@ -160,6 +187,8 @@ bool parsegamingcoinURI(QString uri, SendCoinsRecipient *out)
     QUrl uriInstance(uri);
     return parsegamingcoinURI(uriInstance, out);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 bool parseFreicoinURI(QString uri, SendCoinsRecipient *out)
 {
     // Convert freicoin:// to freicoin:
@@ -172,6 +201,9 @@ bool parseFreicoinURI(QString uri, SendCoinsRecipient *out)
     }
     QUrl uriInstance(uri);
     return parseFreicoinURI(uriInstance, out);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 }
 
@@ -314,7 +346,11 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 boost::filesystem::path static StartupShortcutPath()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return GetSpecialFolderPath(CSIDL_STARTUP) / "gamingcoin.lnk";
+=======
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Freicoin.lnk";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return GetSpecialFolderPath(CSIDL_STARTUP) / "Freicoin.lnk";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -323,7 +359,11 @@ boost::filesystem::path static StartupShortcutPath()
 bool GetStartOnSystemStartup()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     // check for gamingcoin.lnk
+=======
+    // check for Freicoin.lnk
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // check for Freicoin.lnk
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -404,7 +444,11 @@ boost::filesystem::path static GetAutostartDir()
 boost::filesystem::path static GetAutostartFilePath()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return GetAutostartDir() / "gamingcoin.desktop";
+=======
+    return GetAutostartDir() / "freicoin.desktop";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return GetAutostartDir() / "freicoin.desktop";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -446,15 +490,21 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Write a gamingcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         optionFile << "Name=gamingcoin\n";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         // Write a freicoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         optionFile << "Name=Freicoin\n";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
@@ -477,15 +527,21 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     header = tr("gamingcoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
         "  gamingcoin-qt [" + tr("command-line options") + "]                     " + "\n";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     header = tr("Freicoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
         "  freicoin-qt [" + tr("command-line options") + "]                     " + "\n";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     coreOptions = QString::fromStdString(HelpMessage());
@@ -496,7 +552,11 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     setWindowTitle(tr("gamingcoin-Qt"));
+=======
+    setWindowTitle(tr("Freicoin-Qt"));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     setWindowTitle(tr("Freicoin-Qt"));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

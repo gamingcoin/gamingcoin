@@ -3,7 +3,11 @@
 
 # === Vagrantfile ---------------------------------------------------------===
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright © 2012 Gamingcoin Developer.
+=======
+# Copyright © 2012 Freicoin Developers.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 # Copyright © 2012 Freicoin Developers.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

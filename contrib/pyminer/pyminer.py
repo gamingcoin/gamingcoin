@@ -23,7 +23,11 @@ settings = {}
 pp = pprint.PrettyPrinter(indent=4)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class gamingcoinRPC:
+=======
+class FreicoinRPC:
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 class FreicoinRPC:
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -188,7 +192,11 @@ class Miner:
 
 	def loop(self):
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rpc = gamingcoinRPC(settings['host'], settings['port'],
+=======
+		rpc = FreicoinRPC(settings['host'], settings['port'],
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 		rpc = FreicoinRPC(settings['host'], settings['port'],
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

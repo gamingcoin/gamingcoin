@@ -1,6 +1,10 @@
 #include "optionsmodel.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -47,7 +51,11 @@ void OptionsModel::Init()
 
     // These are Qt-only settings:
 <<<<<<< HEAD
+<<<<<<< HEAD
     nDisplayUnit = settings.value("nDisplayUnit", gamingcoinUnits::FRC).toInt();
+=======
+    nDisplayUnit = settings.value("nDisplayUnit", FreicoinUnits::FRC).toInt();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     nDisplayUnit = settings.value("nDisplayUnit", FreicoinUnits::FRC).toInt();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -58,7 +66,11 @@ void OptionsModel::Init()
     language = settings.value("language", "").toString();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // These are shared with core gamingcoin; we want
+=======
+    // These are shared with core Freicoin; we want
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // These are shared with core Freicoin; we want
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

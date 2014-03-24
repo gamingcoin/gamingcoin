@@ -7,7 +7,11 @@
 
 // Name of client reported in the 'version' message. Report the same name
 <<<<<<< HEAD
+<<<<<<< HEAD
 // for both gamingcoind and gamingcoin-qt, to make it harder for attackers to
+=======
+// for both freicoind and freicoin-qt, to make it harder for attackers to
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 // for both freicoind and freicoin-qt, to make it harder for attackers to
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

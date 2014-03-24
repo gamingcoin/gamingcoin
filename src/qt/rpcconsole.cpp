@@ -3,7 +3,11 @@
 
 #include "clientmodel.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -317,7 +321,11 @@ void RPCConsole::clear()
                 );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     message(CMD_REPLY, (tr("Welcome to the gamingcoin RPC console.") + "<br>" +
+=======
+    message(CMD_REPLY, (tr("Welcome to the Freicoin RPC console.") + "<br>" +
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     message(CMD_REPLY, (tr("Welcome to the Freicoin RPC console.") + "<br>" +
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

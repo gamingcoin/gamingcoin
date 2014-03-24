@@ -1,6 +1,10 @@
 The sources in this directory are unit test cases.  Boost includes a
 <<<<<<< HEAD
+<<<<<<< HEAD
 unit testing framework, and since gamingcoin already uses boost, it makes
+=======
+unit testing framework, and since freicoin already uses boost, it makes
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 unit testing framework, and since freicoin already uses boost, it makes
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -9,9 +13,15 @@ configure some other framework (we want as few impediments to creating
 unit tests as possible).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The build system is setup to compile an executable called "test_gamingcoin"
 that runs all of the unit tests.  The main source file is called
 test_gamingcoin.cpp, which simply includes other files that contain the
+=======
+The build system is setup to compile an executable called "test_freicoin"
+that runs all of the unit tests.  The main source file is called
+test_freicoin.cpp, which simply includes other files that contain the
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 The build system is setup to compile an executable called "test_freicoin"
 that runs all of the unit tests.  The main source file is called

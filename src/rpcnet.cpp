@@ -4,7 +4,11 @@
 
 #include "net.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

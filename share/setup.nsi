@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Name Gamingcoin
+=======
+Name Freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 Name Freicoin
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -10,6 +14,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 <<<<<<< HEAD
+<<<<<<< HEAD
 !define VERSION 1.0
 !define COMPANY "gamingcoin project"
 !define URL http://gmgcoin.com
@@ -17,12 +22,17 @@ SetCompressor /SOLID lzma
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/gamingcoin.ico"
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 !define VERSION 0.0.2-2
 !define COMPANY "Freicoin project"
 !define URL http://freico.in/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/freicoin.ico"
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 !define MUI_WELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
@@ -33,8 +43,13 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 <<<<<<< HEAD
+<<<<<<< HEAD
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER gamingcoin
 !define MUI_FINISHPAGE_RUN $INSTDIR\gamingcoin-qt.exe
+=======
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER Freicoin
+!define MUI_FINISHPAGE_RUN $INSTDIR\freicoin-qt.exe
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER Freicoin
 !define MUI_FINISHPAGE_RUN $INSTDIR\freicoin-qt.exe
@@ -64,8 +79,13 @@ Var StartMenuGroup
 
 # Installer attributes
 <<<<<<< HEAD
+<<<<<<< HEAD
 OutFile gamingcoin-1.0-windows-setup.exe
 InstallDir $PROGRAMFILES\gamingcoin
+=======
+OutFile freicoin-0.0.2-2-windows-setup.exe
+InstallDir $PROGRAMFILES\Freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 OutFile freicoin-0.0.2-2-windows-setup.exe
 InstallDir $PROGRAMFILES\Freicoin
@@ -75,8 +95,13 @@ XPStyle on
 BrandingText " "
 ShowInstDetails show
 <<<<<<< HEAD
+<<<<<<< HEAD
 VIProductVersion 1.0
 VIAddVersionKey ProductName gamingcoin
+=======
+VIProductVersion 0.7.2.0
+VIAddVersionKey ProductName Freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 VIProductVersion 0.7.2.0
 VIAddVersionKey ProductName Freicoin
@@ -95,17 +120,23 @@ Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
 <<<<<<< HEAD
+<<<<<<< HEAD
     File ../release/gamingcoin-qt.exe
     File /oname=COPYING.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
     File ../src/gamingcoind.exe
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     File ../release/freicoin-qt.exe
     File /oname=COPYING.txt ../COPYING
     File /oname=readme.txt ../doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
     File ../src/freicoind.exe
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     SetOutPath $INSTDIR\src
     File /r /x *.exe /x *.o ../src\*.*
@@ -113,8 +144,13 @@ Section -Main SEC0000
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Remove old wxwidgets-based-gamingcoin executable and locales:
     Delete /REBOOTOK $INSTDIR\gamingcoin.exe
+=======
+    # Remove old wxwidgets-based-freicoin executable and locales:
+    Delete /REBOOTOK $INSTDIR\freicoin.exe
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     # Remove old wxwidgets-based-freicoin executable and locales:
     Delete /REBOOTOK $INSTDIR\freicoin.exe
@@ -129,8 +165,13 @@ Section -post SEC0001
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
 <<<<<<< HEAD
+<<<<<<< HEAD
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\gamingcoin.lnk" $INSTDIR\gamingcoin-qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall gamingcoin.lnk" $INSTDIR\uninstall.exe
+=======
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Freicoin.lnk" $INSTDIR\freicoin-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Freicoin.lnk" $INSTDIR\uninstall.exe
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Freicoin.lnk" $INSTDIR\freicoin-qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Freicoin.lnk" $INSTDIR\uninstall.exe
@@ -145,15 +186,21 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
 <<<<<<< HEAD
+<<<<<<< HEAD
     WriteRegStr HKCR "gamingcoin" "URL Protocol" ""
     WriteRegStr HKCR "gamingcoin" "" "URL:gamingcoin"
     WriteRegStr HKCR "gamingcoin\DefaultIcon" "" $INSTDIR\gamingcoin-qt.exe
     WriteRegStr HKCR "gamingcoin\shell\open\command" "" '"$INSTDIR\gamingcoin-qt.exe" "%1"'
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     WriteRegStr HKCR "freicoin" "URL Protocol" ""
     WriteRegStr HKCR "freicoin" "" "URL:Freicoin"
     WriteRegStr HKCR "freicoin\DefaultIcon" "" $INSTDIR\freicoin-qt.exe
     WriteRegStr HKCR "freicoin\shell\open\command" "" '"$INSTDIR\freicoin-qt.exe" "%1"'
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 SectionEnd
 
@@ -173,7 +220,11 @@ done${UNSECTION_ID}:
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
 <<<<<<< HEAD
+<<<<<<< HEAD
     Delete /REBOOTOK $INSTDIR\gamingcoin-qt.exe
+=======
+    Delete /REBOOTOK $INSTDIR\freicoin-qt.exe
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     Delete /REBOOTOK $INSTDIR\freicoin-qt.exe
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -187,9 +238,15 @@ SectionEnd
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
 <<<<<<< HEAD
+<<<<<<< HEAD
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall gamingcoin.lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\gamingcoin.lnk"
     Delete /REBOOTOK "$SMSTARTUP\gamingcoin.lnk"
+=======
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Freicoin.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Freicoin.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\Freicoin.lnk"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Freicoin.lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Freicoin.lnk"
@@ -203,7 +260,11 @@ Section -un.post UNSEC0001
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
 <<<<<<< HEAD
+<<<<<<< HEAD
     DeleteRegKey HKCR "gamingcoin"
+=======
+    DeleteRegKey HKCR "freicoin"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     DeleteRegKey HKCR "freicoin"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

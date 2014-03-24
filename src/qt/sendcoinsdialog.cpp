@@ -2,7 +2,11 @@
 #include "ui_sendcoinsdialog.h"
 #include "walletmodel.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -101,7 +105,11 @@ void SendCoinsDialog::on_sendButton_clicked()
     foreach(const SendCoinsRecipient &rcp, recipients)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         formatted.append(tr("<b>%1</b> to %2 (%3)").arg(gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, rcp.amount), Qt::escape(rcp.label), rcp.address));
+=======
+        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, rcp.amount), Qt::escape(rcp.label), rcp.address));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         formatted.append(tr("<b>%1</b> to %2 (%3)").arg(FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, rcp.amount), Qt::escape(rcp.label), rcp.address));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -150,7 +158,11 @@ void SendCoinsDialog::on_sendButton_clicked()
         QMessageBox::warning(this, tr("Send Coins"),
             tr("The total exceeds your balance when the %1 transaction fee is included.").
 <<<<<<< HEAD
+<<<<<<< HEAD
             arg(gamingcoinUnits::formatWithUnit(gamingcoinUnits::FRC, sendstatus.fee)),
+=======
+            arg(FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, sendstatus.fee)),
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             arg(FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, sendstatus.fee)),
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -288,9 +300,15 @@ bool SendCoinsDialog::handleURI(const QString &uri)
     SendCoinsRecipient rv;
     // URI has to be valid
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (GUIUtil::parsegamingcoinURI(uri, &rv))
     {
         CgamingcoinAddress address(rv.address.toStdString());
+=======
+    if (GUIUtil::parseFreicoinURI(uri, &rv))
+    {
+        CFreicoinAddress address(rv.address.toStdString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     if (GUIUtil::parseFreicoinURI(uri, &rv))
     {
@@ -314,7 +332,11 @@ void SendCoinsDialog::setBalance(const mpq& balance, const mpq& unconfirmedBalan
 
     int unit = model->getOptionsModel()->getDisplayUnit();
 <<<<<<< HEAD
+<<<<<<< HEAD
     ui->labelBalance->setText(gamingcoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
+=======
+    ui->labelBalance->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     ui->labelBalance->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -326,7 +348,11 @@ void SendCoinsDialog::updateDisplayUnit()
     {
         // Update labelBalance with the current balance and the current unit
 <<<<<<< HEAD
+<<<<<<< HEAD
         ui->labelBalance->setText(gamingcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), RoundAbsolute(model->getBalance(nBestHeight), ROUND_TOWARDS_ZERO)));
+=======
+        ui->labelBalance->setText(FreicoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), RoundAbsolute(model->getBalance(nBestHeight), ROUND_TOWARDS_ZERO)));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         ui->labelBalance->setText(FreicoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), RoundAbsolute(model->getBalance(nBestHeight), ROUND_TOWARDS_ZERO)));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

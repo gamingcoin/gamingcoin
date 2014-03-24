@@ -107,8 +107,13 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
     Array tests = read_json("base58_keys_valid.json");
     std::vector<unsigned char> result;
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinSecret secret;
     CgamingcoinAddress addr;
+=======
+    CFreicoinSecret secret;
+    CFreicoinAddress addr;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinSecret secret;
     CFreicoinAddress addr;
@@ -136,7 +141,11 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_parse)
             bool isCompressed = find_value(metadata, "isCompressed").get_bool();
             // Must be valid private key
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Note: CgamingcoinSecret::SetString tests isValid, whereas CgamingcoinAddress does not!
+=======
+            // Note: CFreicoinSecret::SetString tests isValid, whereas CFreicoinAddress does not!
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             // Note: CFreicoinSecret::SetString tests isValid, whereas CFreicoinAddress does not!
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -197,7 +206,11 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
         {
             bool isCompressed = find_value(metadata, "isCompressed").get_bool();
 <<<<<<< HEAD
+<<<<<<< HEAD
             CgamingcoinSecret secret;
+=======
+            CFreicoinSecret secret;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             CFreicoinSecret secret;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -226,8 +239,13 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
                 continue;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             CgamingcoinAddress addrOut;
             BOOST_CHECK_MESSAGE(boost::apply_visitor(CgamingcoinAddressVisitor(&addrOut), dest), "encode dest: " + strTest);
+=======
+            CFreicoinAddress addrOut;
+            BOOST_CHECK_MESSAGE(boost::apply_visitor(CFreicoinAddressVisitor(&addrOut), dest), "encode dest: " + strTest);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             CFreicoinAddress addrOut;
             BOOST_CHECK_MESSAGE(boost::apply_visitor(CFreicoinAddressVisitor(&addrOut), dest), "encode dest: " + strTest);
@@ -238,9 +256,15 @@ BOOST_AUTO_TEST_CASE(base58_keys_valid_gen)
 
     // Visiting a CNoDestination must fail
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress dummyAddr;
     CTxDestination nodest = CNoDestination();
     BOOST_CHECK(!boost::apply_visitor(CgamingcoinAddressVisitor(&dummyAddr), nodest));
+=======
+    CFreicoinAddress dummyAddr;
+    CTxDestination nodest = CNoDestination();
+    BOOST_CHECK(!boost::apply_visitor(CFreicoinAddressVisitor(&dummyAddr), nodest));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress dummyAddr;
     CTxDestination nodest = CNoDestination();
@@ -257,8 +281,13 @@ BOOST_AUTO_TEST_CASE(base58_keys_invalid)
     Array tests = read_json("base58_keys_invalid.json"); // Negative testcases
     std::vector<unsigned char> result;
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinSecret secret;
     CgamingcoinAddress addr;
+=======
+    CFreicoinSecret secret;
+    CFreicoinAddress addr;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinSecret secret;
     CFreicoinAddress addr;

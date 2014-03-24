@@ -6,7 +6,11 @@
 #include "wallet.h"
 #include "walletdb.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -96,7 +100,11 @@ Value getnewaddress(const Array& params, bool fHelp)
         throw runtime_error(
             "getnewaddress [account]\n"
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Returns a new gamingcoin address for receiving payments.  "
+=======
+            "Returns a new Freicoin address for receiving payments.  "
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             "Returns a new Freicoin address for receiving payments.  "
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -120,17 +128,23 @@ Value getnewaddress(const Array& params, bool fHelp)
     pwalletMain->SetAddressBookName(keyID, strAccount);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     return CgamingcoinAddress(keyID).ToString();
 }
 
 
 CgamingcoinAddress GetAccountAddress(string strAccount, bool bForceNew=false)
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     return CFreicoinAddress(keyID).ToString();
 }
 
 
 CFreicoinAddress GetAccountAddress(string strAccount, bool bForceNew=false)
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 {
     CWalletDB walletdb(pwalletMain->strWalletFile);
@@ -167,7 +181,11 @@ CFreicoinAddress GetAccountAddress(string strAccount, bool bForceNew=false)
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     return CgamingcoinAddress(account.vchPubKey.GetID());
+=======
+    return CFreicoinAddress(account.vchPubKey.GetID());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return CFreicoinAddress(account.vchPubKey.GetID());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -179,7 +197,11 @@ Value getaccountaddress(const Array& params, bool fHelp)
         throw runtime_error(
             "getaccountaddress <account>\n"
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Returns the current gamingcoin address for receiving payments to this account.");
+=======
+            "Returns the current Freicoin address for receiving payments to this account.");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             "Returns the current Freicoin address for receiving payments to this account.");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -201,6 +223,7 @@ Value setaccount(const Array& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "setaccount <gamingcoinaddress> <account>\n"
             "Sets the account associated with the given address.");
 
@@ -208,12 +231,17 @@ Value setaccount(const Array& params, bool fHelp)
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid gamingcoin address");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             "setaccount <freicoinaddress> <account>\n"
             "Sets the account associated with the given address.");
 
     CFreicoinAddress address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Freicoin address");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
 
@@ -240,6 +268,7 @@ Value getaccount(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "getaccount <gamingcoinaddress>\n"
             "Returns the account associated with the given address.");
 
@@ -247,12 +276,17 @@ Value getaccount(const Array& params, bool fHelp)
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid gamingcoin address");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             "getaccount <freicoinaddress>\n"
             "Returns the account associated with the given address.");
 
     CFreicoinAddress address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Freicoin address");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     string strAccount;
@@ -275,9 +309,15 @@ Value getaddressesbyaccount(const Array& params, bool fHelp)
     // Find all addresses that have the given account
     Array ret;
 <<<<<<< HEAD
+<<<<<<< HEAD
     BOOST_FOREACH(const PAIRTYPE(CgamingcoinAddress, string)& item, pwalletMain->mapAddressBook)
     {
         const CgamingcoinAddress& address = item.first;
+=======
+    BOOST_FOREACH(const PAIRTYPE(CFreicoinAddress, string)& item, pwalletMain->mapAddressBook)
+    {
+        const CFreicoinAddress& address = item.first;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     BOOST_FOREACH(const PAIRTYPE(CFreicoinAddress, string)& item, pwalletMain->mapAddressBook)
     {
@@ -295,6 +335,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "sendtoaddress <gamingcoinaddress> <amount> [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
@@ -303,6 +344,8 @@ Value sendtoaddress(const Array& params, bool fHelp)
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid gamingcoin address");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             "sendtoaddress <freicoinaddress> <amount> [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
@@ -310,6 +353,9 @@ Value sendtoaddress(const Array& params, bool fHelp)
     CFreicoinAddress address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Freicoin address");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     // Amount
@@ -352,6 +398,7 @@ Value listaddressgroupings(const Array& params, bool fHelp)
         {
             Array addressInfo;
 <<<<<<< HEAD
+<<<<<<< HEAD
             addressInfo.push_back(CgamingcoinAddress(address).ToString());
             addressInfo.push_back(ValueFromAmount(balances[address]));
             {
@@ -359,12 +406,17 @@ Value listaddressgroupings(const Array& params, bool fHelp)
                 if (pwalletMain->mapAddressBook.find(CgamingcoinAddress(address).Get()) != pwalletMain->mapAddressBook.end())
                     addressInfo.push_back(pwalletMain->mapAddressBook.find(CgamingcoinAddress(address).Get())->second);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             addressInfo.push_back(CFreicoinAddress(address).ToString());
             addressInfo.push_back(ValueFromAmount(balances[address]));
             {
                 LOCK(pwalletMain->cs_wallet);
                 if (pwalletMain->mapAddressBook.find(CFreicoinAddress(address).Get()) != pwalletMain->mapAddressBook.end())
                     addressInfo.push_back(pwalletMain->mapAddressBook.find(CFreicoinAddress(address).Get())->second);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             }
             jsonGrouping.push_back(addressInfo);
@@ -379,7 +431,11 @@ Value signmessage(const Array& params, bool fHelp)
     if (fHelp || params.size() != 2)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "signmessage <gamingcoinaddress> <message>\n"
+=======
+            "signmessage <freicoinaddress> <message>\n"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             "signmessage <freicoinaddress> <message>\n"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -391,7 +447,11 @@ Value signmessage(const Array& params, bool fHelp)
     string strMessage = params[1].get_str();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress addr(strAddress);
+=======
+    CFreicoinAddress addr(strAddress);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress addr(strAddress);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -422,7 +482,11 @@ Value verifymessage(const Array& params, bool fHelp)
     if (fHelp || params.size() != 3)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "verifymessage <gamingcoinaddress> <signature> <message>\n"
+=======
+            "verifymessage <freicoinaddress> <signature> <message>\n"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             "verifymessage <freicoinaddress> <signature> <message>\n"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -433,7 +497,11 @@ Value verifymessage(const Array& params, bool fHelp)
     string strMessage  = params[2].get_str();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress addr(strAddress);
+=======
+    CFreicoinAddress addr(strAddress);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress addr(strAddress);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -467,6 +535,7 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "getreceivedbyaddress <gamingcoinaddress> [minconf=1]\n"
             "Returns the total amount received by <gamingcoinaddress> in transactions with at least [minconf] confirmations.");
 
@@ -476,6 +545,8 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid gamingcoin address");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             "getreceivedbyaddress <freicoinaddress> [minconf=1]\n"
             "Returns the total amount received by <freicoinaddress> in transactions with at least [minconf] confirmations.");
 
@@ -484,6 +555,9 @@ Value getreceivedbyaddress(const Array& params, bool fHelp)
     CScript scriptPubKey;
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Freicoin address");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     scriptPubKey.SetDestination(address.Get());
     if (!IsMine(*pwalletMain,scriptPubKey))
@@ -704,7 +778,11 @@ Value sendfrom(const Array& params, bool fHelp)
     if (fHelp || params.size() < 3 || params.size() > 6)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "sendfrom <fromaccount> <togamingcoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
+=======
+            "sendfrom <fromaccount> <tofreicoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             "sendfrom <fromaccount> <tofreicoinaddress> <amount> [minconf=1] [comment] [comment-to]\n"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -713,9 +791,15 @@ Value sendfrom(const Array& params, bool fHelp)
 
     string strAccount = AccountFromValue(params[0]);
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress address(params[1].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid gamingcoin address");
+=======
+    CFreicoinAddress address(params[1].get_str());
+    if (!address.IsValid())
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Freicoin address");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress address(params[1].get_str());
     if (!address.IsValid())
@@ -771,7 +855,11 @@ Value sendmany(const Array& params, bool fHelp)
         wtx.mapValue["comment"] = params[3].get_str();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     set<CgamingcoinAddress> setAddress;
+=======
+    set<CFreicoinAddress> setAddress;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     set<CFreicoinAddress> setAddress;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -781,9 +869,15 @@ Value sendmany(const Array& params, bool fHelp)
     BOOST_FOREACH(const Pair& s, sendTo)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         CgamingcoinAddress address(s.name_);
         if (!address.IsValid())
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid gamingcoin address: ")+s.name_);
+=======
+        CFreicoinAddress address(s.name_);
+        if (!address.IsValid())
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Freicoin address: ")+s.name_);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         CFreicoinAddress address(s.name_);
         if (!address.IsValid())
@@ -834,7 +928,11 @@ Value addmultisigaddress(const Array& params, bool fHelp)
         string msg = "addmultisigaddress <nrequired> <'[\"key\",\"key\"]'> [account]\n"
             "Add a nrequired-to-sign multisignature address to the wallet\"\n"
 <<<<<<< HEAD
+<<<<<<< HEAD
             "each key is a gamingcoin address or hex-encoded public key\n"
+=======
+            "each key is a Freicoin address or hex-encoded public key\n"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             "each key is a Freicoin address or hex-encoded public key\n"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -862,8 +960,13 @@ Value addmultisigaddress(const Array& params, bool fHelp)
         const std::string& ks = keys[i].get_str();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Case 1: gamingcoin address and we have full public key:
         CgamingcoinAddress address(ks);
+=======
+        // Case 1: Freicoin address and we have full public key:
+        CFreicoinAddress address(ks);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         // Case 1: Freicoin address and we have full public key:
         CFreicoinAddress address(ks);
@@ -903,7 +1006,11 @@ Value addmultisigaddress(const Array& params, bool fHelp)
 
     pwalletMain->SetAddressBookName(innerID, strAccount);
 <<<<<<< HEAD
+<<<<<<< HEAD
     return CgamingcoinAddress(innerID).ToString();
+=======
+    return CFreicoinAddress(innerID).ToString();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return CFreicoinAddress(innerID).ToString();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -935,7 +1042,11 @@ Value ListReceived(const Array& params, bool fByAccounts)
 
     // Tally
 <<<<<<< HEAD
+<<<<<<< HEAD
     map<CgamingcoinAddress, tallyitem> mapTally;
+=======
+    map<CFreicoinAddress, tallyitem> mapTally;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     map<CFreicoinAddress, tallyitem> mapTally;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -966,17 +1077,23 @@ Value ListReceived(const Array& params, bool fByAccounts)
     Array ret;
     map<string, tallyitem> mapAccountTally;
 <<<<<<< HEAD
+<<<<<<< HEAD
     BOOST_FOREACH(const PAIRTYPE(CgamingcoinAddress, string)& item, pwalletMain->mapAddressBook)
     {
         const CgamingcoinAddress& address = item.first;
         const string& strAccount = item.second;
         map<CgamingcoinAddress, tallyitem>::iterator it = mapTally.find(address);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     BOOST_FOREACH(const PAIRTYPE(CFreicoinAddress, string)& item, pwalletMain->mapAddressBook)
     {
         const CFreicoinAddress& address = item.first;
         const string& strAccount = item.second;
         map<CFreicoinAddress, tallyitem>::iterator it = mapTally.find(address);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         if (it == mapTally.end() && !fIncludeEmpty)
             continue;
@@ -1073,7 +1190,11 @@ void ListTransactions(const CWalletTx& wtx, const string& strAccount, int nMinDe
             Object entry;
             entry.push_back(Pair("account", strSentAccount));
 <<<<<<< HEAD
+<<<<<<< HEAD
             entry.push_back(Pair("address", CgamingcoinAddress(s.first).ToString()));
+=======
+            entry.push_back(Pair("address", CFreicoinAddress(s.first).ToString()));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             entry.push_back(Pair("address", CFreicoinAddress(s.first).ToString()));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1100,7 +1221,11 @@ void ListTransactions(const CWalletTx& wtx, const string& strAccount, int nMinDe
                 Object entry;
                 entry.push_back(Pair("account", account));
 <<<<<<< HEAD
+<<<<<<< HEAD
                 entry.push_back(Pair("address", CgamingcoinAddress(r.first).ToString()));
+=======
+                entry.push_back(Pair("address", CFreicoinAddress(r.first).ToString()));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 entry.push_back(Pair("address", CFreicoinAddress(r.first).ToString()));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1393,7 +1518,11 @@ void ThreadTopUpKeyPool(void* parg)
 {
     // Make this thread recognisable as the key-topping-up thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-key-top");
+=======
+    RenameThread("freicoin-key-top");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-key-top");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1405,7 +1534,11 @@ void ThreadCleanWalletPassphrase(void* parg)
 {
     // Make this thread recognisable as the wallet relocking thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-lock-wa");
+=======
+    RenameThread("freicoin-lock-wa");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-lock-wa");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1574,7 +1707,11 @@ Value encryptwallet(const Array& params, bool fHelp)
     // unencrypted private keys. So:
     StartShutdown();
 <<<<<<< HEAD
+<<<<<<< HEAD
     return "wallet encrypted; gamingcoin server stopping, restart to run with encrypted wallet.  The keypool has been flushed, you need to make a new backup.";
+=======
+    return "wallet encrypted; Freicoin server stopping, restart to run with encrypted wallet.  The keypool has been flushed, you need to make a new backup.";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return "wallet encrypted; Freicoin server stopping, restart to run with encrypted wallet.  The keypool has been flushed, you need to make a new backup.";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1608,7 +1745,11 @@ public:
         Array a;
         BOOST_FOREACH(const CTxDestination& addr, addresses)
 <<<<<<< HEAD
+<<<<<<< HEAD
             a.push_back(CgamingcoinAddress(addr).ToString());
+=======
+            a.push_back(CFreicoinAddress(addr).ToString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             a.push_back(CFreicoinAddress(addr).ToString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1624,15 +1765,21 @@ Value validateaddress(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "validateaddress <gamingcoinaddress>\n"
             "Return information about <gamingcoinaddress>.");
 
     CgamingcoinAddress address(params[0].get_str());
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             "validateaddress <freicoinaddress>\n"
             "Return information about <freicoinaddress>.");
 
     CFreicoinAddress address(params[0].get_str());
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     bool isValid = address.IsValid();
 

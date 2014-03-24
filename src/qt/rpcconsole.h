@@ -9,7 +9,11 @@ namespace Ui {
 class ClientModel;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Local gamingcoin RPC console. */
+=======
+/** Local Freicoin RPC console. */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** Local Freicoin RPC console. */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -40,7 +44,11 @@ private slots:
     /** open the debug.log from the current datadir */
     void on_openDebugLogfileButton_clicked();
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** display messagebox with program parameters (same as gamingcoin-qt --help) */
+=======
+    /** display messagebox with program parameters (same as freicoin-qt --help) */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     /** display messagebox with program parameters (same as freicoin-qt --help) */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

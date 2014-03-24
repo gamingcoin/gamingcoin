@@ -119,7 +119,11 @@ void WalletModel::updateAddressBook(const QString &address, const QString &label
 bool WalletModel::validateAddress(const QString &address)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress addressParsed(address.toStdString());
+=======
+    CFreicoinAddress addressParsed(address.toStdString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress addressParsed(address.toStdString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -181,7 +185,11 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
         {
             CScript scriptPubKey;
 <<<<<<< HEAD
+<<<<<<< HEAD
             scriptPubKey.SetDestination(CgamingcoinAddress(rcp.address.toStdString()).Get());
+=======
+            scriptPubKey.SetDestination(CFreicoinAddress(rcp.address.toStdString()).Get());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             scriptPubKey.SetDestination(CFreicoinAddress(rcp.address.toStdString()).Get());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -217,7 +225,11 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
     {
         std::string strAddress = rcp.address.toStdString();
 <<<<<<< HEAD
+<<<<<<< HEAD
         CTxDestination dest = CgamingcoinAddress(strAddress).Get();
+=======
+        CTxDestination dest = CFreicoinAddress(strAddress).Get();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         CTxDestination dest = CFreicoinAddress(strAddress).Get();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -323,9 +335,15 @@ static void NotifyKeyStoreStatusChanged(WalletModel *walletmodel, CCryptoKeyStor
 static void NotifyAddressBookChanged(WalletModel *walletmodel, CWallet *wallet, const CTxDestination &address, const std::string &label, bool isMine, ChangeType status)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     OutputDebugStringF("NotifyAddressBookChanged %s %s isMine=%i status=%i\n", CgamingcoinAddress(address).ToString().c_str(), label.c_str(), isMine, status);
     QMetaObject::invokeMethod(walletmodel, "updateAddressBook", Qt::QueuedConnection,
                               Q_ARG(QString, QString::fromStdString(CgamingcoinAddress(address).ToString())),
+=======
+    OutputDebugStringF("NotifyAddressBookChanged %s %s isMine=%i status=%i\n", CFreicoinAddress(address).ToString().c_str(), label.c_str(), isMine, status);
+    QMetaObject::invokeMethod(walletmodel, "updateAddressBook", Qt::QueuedConnection,
+                              Q_ARG(QString, QString::fromStdString(CFreicoinAddress(address).ToString())),
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     OutputDebugStringF("NotifyAddressBookChanged %s %s isMine=%i status=%i\n", CFreicoinAddress(address).ToString().c_str(), label.c_str(), isMine, status);
     QMetaObject::invokeMethod(walletmodel, "updateAddressBook", Qt::QueuedConnection,

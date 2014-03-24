@@ -25,7 +25,11 @@ if cmd == "backupwallet":
 elif cmd == "getaccount":
 	try:
 <<<<<<< HEAD
+<<<<<<< HEAD
 		addr = raw_input("Enter a GamingCoin address: ")
+=======
+		addr = raw_input("Enter a Freicoin address: ")
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 		addr = raw_input("Enter a Freicoin address: ")
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -131,7 +135,11 @@ elif cmd == "getreceivedbyaccount":
 elif cmd == "getreceivedbyaddress":
 	try:
 <<<<<<< HEAD
+<<<<<<< HEAD
 		addr = raw_input("Enter a GamingCoin address (optional): ")
+=======
+		addr = raw_input("Enter a Freicoin address (optional): ")
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 		addr = raw_input("Enter a Freicoin address (optional): ")
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -15,15 +15,21 @@ static const string strSecret2      ("5KC4ejrDjv152FGwP386VD1i2NYc5KkfSMyv1nGy1V
 static const string strSecret1C     ("Kwr371tjA9u2rFSMZjTNun2PXXP3WPZu2afRHTcta6KxEUdm1vEw");
 static const string strSecret2C     ("L3Hq7a8FEQwJkW1M2GNKDW28546Vp5miewcCzSqUD9kCAXrJdS3g");
 <<<<<<< HEAD
+<<<<<<< HEAD
 static const CgamingcoinAddress addr1 ("1QFqqMUD55ZV3PJEJZtaKCsQmjLT6JkjvJ");
 static const CgamingcoinAddress addr2 ("1F5y5E5FMc5YzdJtB9hLaUe43GDxEKXENJ");
 static const CgamingcoinAddress addr1C("1NoJrossxPBKfCHuJXT4HadJrXRE9Fxiqs");
 static const CgamingcoinAddress addr2C("1CRj2HyM1CXWzHAXLQtiGLyggNT9WQqsDs");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 static const CFreicoinAddress addr1 ("1QFqqMUD55ZV3PJEJZtaKCsQmjLT6JkjvJ");
 static const CFreicoinAddress addr2 ("1F5y5E5FMc5YzdJtB9hLaUe43GDxEKXENJ");
 static const CFreicoinAddress addr1C("1NoJrossxPBKfCHuJXT4HadJrXRE9Fxiqs");
 static const CFreicoinAddress addr2C("1CRj2HyM1CXWzHAXLQtiGLyggNT9WQqsDs");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
 
@@ -46,7 +52,11 @@ void dumpKeyInfo(uint256 privkey)
         bool fCompressed = nCompressed == 1;
         printf("  * %s:\n", fCompressed ? "compressed" : "uncompressed");
 <<<<<<< HEAD
+<<<<<<< HEAD
         CgamingcoinSecret bsecret;
+=======
+        CFreicoinSecret bsecret;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         CFreicoinSecret bsecret;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -57,7 +67,11 @@ void dumpKeyInfo(uint256 privkey)
         vector<unsigned char> vchPubKey = key.GetPubKey();
         printf("    * pubkey (hex): %s\n", HexStr(vchPubKey).c_str());
 <<<<<<< HEAD
+<<<<<<< HEAD
         printf("    * address (base58): %s\n", CgamingcoinAddress(vchPubKey).ToString().c_str());
+=======
+        printf("    * address (base58): %s\n", CFreicoinAddress(vchPubKey).ToString().c_str());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         printf("    * address (base58): %s\n", CFreicoinAddress(vchPubKey).ToString().c_str());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -71,7 +85,11 @@ BOOST_AUTO_TEST_SUITE(key_tests)
 BOOST_AUTO_TEST_CASE(key_test1)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinSecret bsecret1, bsecret2, bsecret1C, bsecret2C, baddress1;
+=======
+    CFreicoinSecret bsecret1, bsecret2, bsecret1C, bsecret2C, baddress1;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinSecret bsecret1, bsecret2, bsecret1C, bsecret2C, baddress1;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

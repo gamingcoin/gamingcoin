@@ -100,7 +100,11 @@ BOOST_AUTO_TEST_CASE(DoS_checknbits)
     using namespace boost::assign; // for 'map_list_of()'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Timestamps,nBits from the gamingcoin blockchain.
+=======
+    // Timestamps,nBits from the freicoin blockchain.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Timestamps,nBits from the freicoin blockchain.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

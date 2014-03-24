@@ -7,7 +7,11 @@
 
 #include "base58.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -43,7 +47,11 @@ void ScriptPubKeyToJSON(const CScript& scriptPubKey, Object& out)
     Array a;
     BOOST_FOREACH(const CTxDestination& addr, addresses)
 <<<<<<< HEAD
+<<<<<<< HEAD
         a.push_back(CgamingcoinAddress(addr).ToString());
+=======
+        a.push_back(CFreicoinAddress(addr).ToString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         a.push_back(CFreicoinAddress(addr).ToString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -165,7 +173,11 @@ Value listunspent(const Array& params, bool fHelp)
         nMaxDepth = params[1].get_int();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     set<CgamingcoinAddress> setAddress;
+=======
+    set<CFreicoinAddress> setAddress;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     set<CFreicoinAddress> setAddress;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -175,9 +187,15 @@ Value listunspent(const Array& params, bool fHelp)
         BOOST_FOREACH(Value& input, inputs)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             CgamingcoinAddress address(input.get_str());
             if (!address.IsValid())
                 throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid gamingcoin address: ")+input.get_str());
+=======
+            CFreicoinAddress address(input.get_str());
+            if (!address.IsValid())
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Freicoin address: ")+input.get_str());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             CFreicoinAddress address(input.get_str());
             if (!address.IsValid())
@@ -263,6 +281,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     set<CgamingcoinAddress> setAddress;
     BOOST_FOREACH(const Pair& s, sendTo)
     {
@@ -270,12 +289,17 @@ Value createrawtransaction(const Array& params, bool fHelp)
         if (!address.IsValid())
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid gamingcoin address: ")+s.name_);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     set<CFreicoinAddress> setAddress;
     BOOST_FOREACH(const Pair& s, sendTo)
     {
         CFreicoinAddress address(s.name_);
         if (!address.IsValid())
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Freicoin address: ")+s.name_);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
         if (setAddress.count(address))
@@ -444,7 +468,11 @@ Value signrawtransaction(const Array& params, bool fHelp)
         BOOST_FOREACH(Value k, keys)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             CgamingcoinSecret vchSecret;
+=======
+            CFreicoinSecret vchSecret;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             CFreicoinSecret vchSecret;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

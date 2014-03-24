@@ -14,7 +14,11 @@ class QTimer;
 QT_END_NAMESPACE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Model for gamingcoin network client. */
+=======
+/** Model for Freicoin network client. */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** Model for Freicoin network client. */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -25,17 +25,23 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
 <<<<<<< HEAD
+<<<<<<< HEAD
     ui->addressIn_SM->setPlaceholderText(tr("Enter a gamingcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
     ui->addressIn_VM->setPlaceholderText(tr("Enter a gamingcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
     ui->signatureIn_VM->setPlaceholderText(tr("Enter gamingcoin signature"));
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     ui->addressIn_SM->setPlaceholderText(tr("Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
     ui->addressIn_VM->setPlaceholderText(tr("Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
     ui->signatureIn_VM->setPlaceholderText(tr("Enter Freicoin signature"));
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 #endif
 
@@ -50,8 +56,13 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
     ui->signatureIn_VM->installEventFilter(this);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     ui->signatureOut_SM->setFont(GUIUtil::gamingcoinAddressFont());
     ui->signatureIn_VM->setFont(GUIUtil::gamingcoinAddressFont());
+=======
+    ui->signatureOut_SM->setFont(GUIUtil::freicoinAddressFont());
+    ui->signatureIn_VM->setFont(GUIUtil::freicoinAddressFont());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     ui->signatureOut_SM->setFont(GUIUtil::freicoinAddressFont());
     ui->signatureIn_VM->setFont(GUIUtil::freicoinAddressFont());
@@ -119,7 +130,11 @@ void SignVerifyMessageDialog::on_signMessageButton_SM_clicked()
     ui->signatureOut_SM->clear();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress addr(ui->addressIn_SM->text().toStdString());
+=======
+    CFreicoinAddress addr(ui->addressIn_SM->text().toStdString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress addr(ui->addressIn_SM->text().toStdString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -204,7 +219,11 @@ void SignVerifyMessageDialog::on_addressBookButton_VM_clicked()
 void SignVerifyMessageDialog::on_verifyMessageButton_VM_clicked()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress addr(ui->addressIn_VM->text().toStdString());
+=======
+    CFreicoinAddress addr(ui->addressIn_VM->text().toStdString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress addr(ui->addressIn_VM->text().toStdString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -249,7 +268,11 @@ void SignVerifyMessageDialog::on_verifyMessageButton_VM_clicked()
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (!(CgamingcoinAddress(key.GetPubKey().GetID()) == addr))
+=======
+    if (!(CFreicoinAddress(key.GetPubKey().GetID()) == addr))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     if (!(CFreicoinAddress(key.GetPubKey().GetID()) == addr))
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

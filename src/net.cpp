@@ -408,7 +408,11 @@ void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-ext-ip");
+=======
+    RenameThread("freicoin-ext-ip");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-ext-ip");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -644,7 +648,11 @@ void ThreadSocketHandler(void* parg)
 {
     // Make this thread recognisable as the networking thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-net");
+=======
+    RenameThread("freicoin-net");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-net");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1007,7 +1015,11 @@ void ThreadMapPort(void* parg)
 {
     // Make this thread recognisable as the UPnP thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-UPnP");
+=======
+    RenameThread("freicoin-UPnP");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-UPnP");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1072,7 +1084,11 @@ void ThreadMapPort2(void* parg)
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         string strDesc = "gamingcoin " + FormatFullVersion();
+=======
+        string strDesc = "Freicoin " + FormatFullVersion();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         string strDesc = "Freicoin " + FormatFullVersion();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1171,7 +1187,11 @@ void ThreadDNSAddressSeed(void* parg)
 {
     // Make this thread recognisable as the DNS seeding thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-dnsseed");
+=======
+    RenameThread("freicoin-dnsseed");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-dnsseed");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1270,7 +1290,11 @@ void ThreadDumpAddress(void* parg)
 {
     // Make this thread recognisable as the address dumping thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-adrdump");
+=======
+    RenameThread("freicoin-adrdump");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-adrdump");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1289,7 +1313,11 @@ void ThreadOpenConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-opencon");
+=======
+    RenameThread("freicoin-opencon");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-opencon");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1454,7 +1482,11 @@ void ThreadOpenAddedConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-opencon");
+=======
+    RenameThread("freicoin-opencon");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-opencon");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1589,7 +1621,11 @@ void ThreadMessageHandler(void* parg)
 {
     // Make this thread recognisable as the message handling thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-msghand");
+=======
+    RenameThread("freicoin-msghand");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-msghand");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1757,7 +1793,11 @@ bool BindListenPort(const CService &addrBind, string& strError)
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
 <<<<<<< HEAD
+<<<<<<< HEAD
             strError = strprintf(_("Unable to bind to %s on this computer. gamingcoin is probably already running."), addrBind.ToString().c_str());
+=======
+            strError = strprintf(_("Unable to bind to %s on this computer. Freicoin is probably already running."), addrBind.ToString().c_str());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             strError = strprintf(_("Unable to bind to %s on this computer. Freicoin is probably already running."), addrBind.ToString().c_str());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1844,7 +1884,11 @@ void StartNode(void* parg)
 {
     // Make this thread recognisable as the startup thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-start");
+=======
+    RenameThread("freicoin-start");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-start");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1900,7 +1944,11 @@ void StartNode(void* parg)
 
     // Generate coins in the background
 <<<<<<< HEAD
+<<<<<<< HEAD
     Generategamingcoins(GetBoolArg("-gen", false), pwalletMain);
+=======
+    GenerateFreicoins(GetBoolArg("-gen", false), pwalletMain);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     GenerateFreicoins(GetBoolArg("-gen", false), pwalletMain);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1930,7 +1978,11 @@ bool StopNode()
     if (vnThreadsRunning[THREAD_OPENCONNECTIONS] > 0) printf("ThreadOpenConnections still running\n");
     if (vnThreadsRunning[THREAD_MESSAGEHANDLER] > 0) printf("ThreadMessageHandler still running\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (vnThreadsRunning[THREAD_MINER] > 0) printf("ThreadgamingcoinMiner still running\n");
+=======
+    if (vnThreadsRunning[THREAD_MINER] > 0) printf("ThreadFreicoinMiner still running\n");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     if (vnThreadsRunning[THREAD_MINER] > 0) printf("ThreadFreicoinMiner still running\n");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

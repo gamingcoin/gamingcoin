@@ -65,7 +65,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -89,7 +93,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -139,7 +147,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -161,7 +173,11 @@
           <widget class="QPushButton" name="signMessageButton_SM">
            <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <string>Sign the message to prove you own this gamingcoin address</string>
+=======
+            <string>Sign the message to prove you own this Freicoin address</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <string>Sign the message to prove you own this Freicoin address</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -171,7 +187,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -192,7 +212,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -295,7 +319,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -323,7 +351,11 @@
           <widget class="QPushButton" name="verifyMessageButton_VM">
            <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <string>Verify the message to ensure it was signed with the specified gamingcoin address</string>
+=======
+            <string>Verify the message to ensure it was signed with the specified Freicoin address</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <string>Verify the message to ensure it was signed with the specified Freicoin address</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -333,7 +365,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -354,7 +390,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -424,7 +464,11 @@
  </customwidgets>
  <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <include location="../gamingcoin.qrc"/>
+=======
+  <include location="../freicoin.qrc"/>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   <include location="../freicoin.qrc"/>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

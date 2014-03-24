@@ -4,7 +4,11 @@
 #include "base58.h"
 #include "util.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -37,7 +41,11 @@ BOOST_AUTO_TEST_CASE(rpc_addmultisig)
 
     Value v;
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress address;
+=======
+    CFreicoinAddress address;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress address;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

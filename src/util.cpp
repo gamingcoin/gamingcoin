@@ -1086,7 +1086,11 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
 <<<<<<< HEAD
+<<<<<<< HEAD
     const char* pszModule = "gamingcoin";
+=======
+    const char* pszModule = "freicoin";
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     const char* pszModule = "freicoin";
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1126,6 +1130,7 @@ boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\gamingcoin
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\gamingcoin
     // Mac: ~/Library/Application Support/gamingcoin
@@ -1134,6 +1139,8 @@ boost::filesystem::path GetDefaultDataDir()
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "gamingcoin";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\Freicoin
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\Freicoin
     // Mac: ~/Library/Application Support/Freicoin
@@ -1141,6 +1148,9 @@ boost::filesystem::path GetDefaultDataDir()
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Freicoin";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 #else
     fs::path pathRet;
@@ -1154,15 +1164,21 @@ boost::filesystem::path GetDefaultDataDir()
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
 <<<<<<< HEAD
+<<<<<<< HEAD
     return pathRet / "gamingcoin";
 #else
     // Unix
     return pathRet / ".gamingcoin";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     return pathRet / "Freicoin";
 #else
     // Unix
     return pathRet / ".freicoin";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 #endif
 #endif
@@ -1206,7 +1222,11 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 boost::filesystem::path GetConfigFile()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     boost::filesystem::path pathConfigFile(GetArg("-conf", "gamingcoin.conf"));
+=======
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "freicoin.conf"));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     boost::filesystem::path pathConfigFile(GetArg("-conf", "freicoin.conf"));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1220,7 +1240,11 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good())
 <<<<<<< HEAD
+<<<<<<< HEAD
         return; // No gamingcoin.conf file is OK
+=======
+        return; // No freicoin.conf file is OK
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         return; // No freicoin.conf file is OK
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1231,7 +1255,11 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Don't overwrite existing settings so command line settings override gamingcoin.conf
+=======
+        // Don't overwrite existing settings so command line settings override freicoin.conf
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         // Don't overwrite existing settings so command line settings override freicoin.conf
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1249,7 +1277,11 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 boost::filesystem::path GetPidFile()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     boost::filesystem::path pathPidFile(GetArg("-pid", "gamingcoind.pid"));
+=======
+    boost::filesystem::path pathPidFile(GetArg("-pid", "freicoind.pid"));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     boost::filesystem::path pathPidFile(GetArg("-pid", "freicoind.pid"));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1397,15 +1429,21 @@ void AddTimeData(const CNetAddr& ip, int64 nTime)
                 {
                     fDone = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong gamingcoin will not work properly.");
                     strMiscWarning = strMessage;
                     printf("*** %s\n", strMessage.c_str());
                     uiInterface.ThreadSafeMessageBox(strMessage+" ", string("gamingcoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION);
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
                     string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Freicoin will not work properly.");
                     strMiscWarning = strMessage;
                     printf("*** %s\n", strMessage.c_str());
                     uiInterface.ThreadSafeMessageBox(strMessage+" ", string("Freicoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION);
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
                 }
             }

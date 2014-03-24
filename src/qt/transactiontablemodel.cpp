@@ -7,7 +7,11 @@
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -433,7 +437,11 @@ QString TransactionTableModel::formatTxAmount(const TransactionRecord *wtx, bool
     mpq qNet = wtx->credit + wtx->debit;
     qNet = RoundAbsolute(qNet, ROUND_TOWARDS_ZERO);
 <<<<<<< HEAD
+<<<<<<< HEAD
     QString str = gamingcoinUnits::format(walletModel->getOptionsModel()->getDisplayUnit(), qNet);
+=======
+    QString str = FreicoinUnits::format(walletModel->getOptionsModel()->getDisplayUnit(), qNet);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     QString str = FreicoinUnits::format(walletModel->getOptionsModel()->getDisplayUnit(), qNet);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

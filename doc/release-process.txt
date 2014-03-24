@@ -2,7 +2,11 @@
 
 * update (commit) version in sources
 <<<<<<< HEAD
+<<<<<<< HEAD
   gamingcoin-qt.pro
+=======
+  freicoin-qt.pro
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   freicoin-qt.pro
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -21,7 +25,11 @@
 * perform gitian builds
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   * From a directory containing the gamingcoin source, gitian-builder and gitian.sigs
+=======
+  * From a directory containing the freicoin source, gitian-builder and gitian.sigs
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   * From a directory containing the freicoin source, gitian-builder and gitian.sigs
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -40,6 +48,7 @@
    wget 'http://downloads.sourceforge.net/project/boost/boost/1.50.0/boost_1_50_0.tar.bz2'
    wget 'http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.2.tar.gz'
    cd ..
+<<<<<<< HEAD
 <<<<<<< HEAD
    ./bin/gbuild ../gamingcoin/contrib/gitian-descriptors/boost-win32.yml
    mv build/out/boost-win32-1.50.0-gitian2.zip inputs/
@@ -66,6 +75,8 @@
   1. linux 32-bit and 64-bit binaries + source (gamingcoin-${VERSION}-linux-gitian.zip)
   2. windows 32-bit binary, installer + source (gamingcoin-${VERSION}-win32-gitian.zip)
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
    ./bin/gbuild ../freicoin/contrib/gitian-descriptors/boost-win32.yml
    mv build/out/boost-win32-1.50.0-gitian2.zip inputs/
    ./bin/gbuild ../freicoin/contrib/gitian-descriptors/qt-win32.yml
@@ -90,12 +101,16 @@
   Build output expected:
   1. linux 32-bit and 64-bit binaries + source (freicoin-${VERSION}-linux-gitian.zip)
   2. windows 32-bit binary, installer + source (freicoin-${VERSION}-win32-gitian.zip)
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
   3. Gitian signatures (in gitian.sigs/${VERSION}[-win32]/(your gitian key)/
 
 * repackage gitian builds for release as stand-alone zip/tar/installer exe
 
   * Linux .tar.gz:
+<<<<<<< HEAD
 <<<<<<< HEAD
    unzip gamingcoin-${VERSION}-linux-gitian.zip -d gamingcoin-${VERSION}-linux
    tar czvf gamingcoin-${VERSION}-linux.tar.gz gamingcoin-${VERSION}-linux
@@ -107,6 +122,8 @@
    zip -r gamingcoin-${VERSION}-win32.zip gamingcoin-${VERSION}-win32
    rm -rf gamingcoin-${VERSION}-win32
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
    unzip freicoin-${VERSION}-linux-gitian.zip -d freicoin-${VERSION}-linux
    tar czvf freicoin-${VERSION}-linux.tar.gz freicoin-${VERSION}-linux
    rm -rf freicoin-${VERSION}-linux
@@ -116,12 +133,16 @@
    mv freicoin-${VERSION}-win32/freicoin-*-setup.exe .
    zip -r freicoin-${VERSION}-win32.zip freicoin-${VERSION}-win32
    rm -rf freicoin-${VERSION}-win32
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
 * perform Mac build
   See this blog post for how Gavin set up his build environment to build the OSX
   release; note that a patched version of macdeployqt is not needed anymore, as
   the required functionality and fixes are implemented directly in macdeployqtplus:
+<<<<<<< HEAD
 <<<<<<< HEAD
     http://gavintech.blogspot.com/2011/11/deploying-gamingcoin-qt-on-osx.html
   Gavin also had trouble with the macports py27-appscript package; he
@@ -136,6 +157,8 @@
  Build output expected:
   gamingcoin-Qt.dmg
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     http://gavintech.blogspot.com/2011/11/deploying-freicoin-qt-on-osx.html
   Gavin also had trouble with the macports py27-appscript package; he
   ended up installing a version that worked with: /usr/bin/easy_install-2.7 appscript
@@ -148,6 +171,9 @@
 
  Build output expected:
   Freicoin-Qt.dmg
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
 * upload builds to SourceForge
@@ -155,7 +181,11 @@
 * create SHA256SUMS for builds, and PGP-sign it
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * update gamingcoin.org version
+=======
+* update freicoin.org version
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 * update freicoin.org version
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -179,6 +209,7 @@
 
 * After 3 or more people have gitian-built, repackage gitian-signed zips:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   * From a directory containing gamingcoin source, gitian.sigs and gitian zips
    export VERSION=0.5.1
@@ -206,6 +237,8 @@
    zip -r gamingcoin-${VERSION}-win32-gitian.zip *
    cp gamingcoin-${VERSION}-win32-gitian.zip ../
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
   * From a directory containing freicoin source, gitian.sigs and gitian zips
    export VERSION=0.5.1
    mkdir freicoin-${VERSION}-linux-gitian
@@ -231,6 +264,9 @@
    done
    zip -r freicoin-${VERSION}-win32-gitian.zip *
    cp freicoin-${VERSION}-win32-gitian.zip ../
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
    popd
 

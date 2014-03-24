@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define BOOST_TEST_MODULE gamingcoin Test Suite
+=======
+#define BOOST_TEST_MODULE Freicoin Test Suite
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #define BOOST_TEST_MODULE Freicoin Test Suite
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

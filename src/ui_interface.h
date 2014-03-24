@@ -3,8 +3,13 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifndef gamingcoin_UI_INTERFACE_H
 #define gamingcoin_UI_INTERFACE_H
+=======
+#ifndef FREICOIN_UI_INTERFACE_H
+#define FREICOIN_UI_INTERFACE_H
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #ifndef FREICOIN_UI_INTERFACE_H
 #define FREICOIN_UI_INTERFACE_H

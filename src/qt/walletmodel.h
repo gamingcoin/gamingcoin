@@ -24,7 +24,11 @@ public:
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Interface to gamingcoin wallet from Qt view code. */
+=======
+/** Interface to Freicoin wallet from Qt view code. */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** Interface to Freicoin wallet from Qt view code. */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

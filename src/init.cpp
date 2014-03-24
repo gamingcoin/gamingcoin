@@ -5,7 +5,11 @@
 #include "db.h"
 #include "walletdb.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -47,7 +51,11 @@ void StartShutdown()
 {
 #ifdef QT_GUI
 <<<<<<< HEAD
+<<<<<<< HEAD
     // ensure we leave the Qt main loop for a clean GUI exit (Shutdown() is called in gamingcoin.cpp afterwards)
+=======
+    // ensure we leave the Qt main loop for a clean GUI exit (Shutdown() is called in freicoin.cpp afterwards)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // ensure we leave the Qt main loop for a clean GUI exit (Shutdown() is called in freicoin.cpp afterwards)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -65,7 +73,11 @@ void Shutdown(void* parg)
 
     // Make this thread recognisable as the shutdown thread
 <<<<<<< HEAD
+<<<<<<< HEAD
     RenameThread("gamingcoin-shutoff");
+=======
+    RenameThread("freicoin-shutoff");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     RenameThread("freicoin-shutoff");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -93,15 +105,21 @@ void Shutdown(void* parg)
         NewThread(ExitTimeout, NULL);
         Sleep(50);
 <<<<<<< HEAD
+<<<<<<< HEAD
         printf("gamingcoin exited\n\n");
         fExit = true;
 #ifndef QT_GUI
         // ensure non-UI client gets exited here, but let gamingcoin-Qt reach 'return 0;' in gamingcoin.cpp
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         printf("Freicoin exited\n\n");
         fExit = true;
 #ifndef QT_GUI
         // ensure non-UI client gets exited here, but let Freicoin-Qt reach 'return 0;' in freicoin.cpp
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         exit(0);
 #endif
@@ -143,7 +161,11 @@ bool AppInit(int argc, char* argv[])
         // Parameters
         //
 <<<<<<< HEAD
+<<<<<<< HEAD
         // If Qt is used, parameters/gamingcoin.conf are parsed in qt/gamingcoin.cpp's main()
+=======
+        // If Qt is used, parameters/freicoin.conf are parsed in qt/freicoin.cpp's main()
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         // If Qt is used, parameters/freicoin.conf are parsed in qt/freicoin.cpp's main()
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -158,6 +180,7 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             // First part of help message is specific to gamingcoind / RPC client
             std::string strUsage = _("gamingcoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
@@ -166,6 +189,8 @@ bool AppInit(int argc, char* argv[])
                   "  gamingcoind [options] help                " + _("List commands") + "\n" +
                   "  gamingcoind [options] help <command>      " + _("Get help for a command") + "\n";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             // First part of help message is specific to freicoind / RPC client
             std::string strUsage = _("Freicoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
@@ -173,6 +198,9 @@ bool AppInit(int argc, char* argv[])
                   "  freicoind [options] <command> [params]  " + _("Send command to -server or freicoind") + "\n" +
                   "  freicoind [options] help                " + _("List commands") + "\n" +
                   "  freicoind [options] help <command>      " + _("Get help for a command") + "\n";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
             strUsage += "\n" + HelpMessage();
@@ -184,7 +212,11 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         for (int i = 1; i < argc; i++)
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "gamingcoin:"))
+=======
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "freicoin:"))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "freicoin:"))
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -214,7 +246,11 @@ int main(int argc, char* argv[])
     bool fRet = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Connect gamingcoind signal handlers
+=======
+    // Connect freicoind signal handlers
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Connect freicoind signal handlers
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -232,7 +268,11 @@ int main(int argc, char* argv[])
 bool static InitError(const std::string &str)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     uiInterface.ThreadSafeMessageBox(str, _("gamingcoin"), CClientUIInterface::OK | CClientUIInterface::MODAL);
+=======
+    uiInterface.ThreadSafeMessageBox(str, _("Freicoin"), CClientUIInterface::OK | CClientUIInterface::MODAL);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     uiInterface.ThreadSafeMessageBox(str, _("Freicoin"), CClientUIInterface::OK | CClientUIInterface::MODAL);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -242,7 +282,11 @@ bool static InitError(const std::string &str)
 bool static InitWarning(const std::string &str)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     uiInterface.ThreadSafeMessageBox(str, _("gamingcoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+=======
+    uiInterface.ThreadSafeMessageBox(str, _("Freicoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     uiInterface.ThreadSafeMessageBox(str, _("Freicoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -268,8 +312,13 @@ std::string HelpMessage()
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
 <<<<<<< HEAD
+<<<<<<< HEAD
         "  -conf=<file>           " + _("Specify configuration file (default: gamingcoin.conf)") + "\n" +
         "  -pid=<file>            " + _("Specify pid file (default: gamingcoind.pid)") + "\n" +
+=======
+        "  -conf=<file>           " + _("Specify configuration file (default: freicoin.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: freicoind.pid)") + "\n" +
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         "  -conf=<file>           " + _("Specify configuration file (default: freicoin.conf)") + "\n" +
         "  -pid=<file>            " + _("Specify pid file (default: freicoind.pid)") + "\n" +
@@ -285,7 +334,11 @@ std::string HelpMessage()
         "  -tor=<ip:port>         " + _("Use proxy to reach tor hidden services (default: same as -proxy)") + "\n"
         "  -dns                   " + _("Allow DNS lookups for -addnode, -seednode and -connect") + "\n" +
 <<<<<<< HEAD
+<<<<<<< HEAD
         "  -port=<port>           " + _("Listen for connections on <port> (default: 48485 or testnet: 18639)") + "\n" +
+=======
+        "  -port=<port>           " + _("Listen for connections on <port> (default: 8639 or testnet: 18639)") + "\n" +
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         "  -port=<port>           " + _("Listen for connections on <port> (default: 8639 or testnet: 18639)") + "\n" +
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -331,7 +384,11 @@ std::string HelpMessage()
         "  -rpcuser=<user>        " + _("Username for JSON-RPC connections") + "\n" +
         "  -rpcpassword=<pw>      " + _("Password for JSON-RPC connections") + "\n" +
 <<<<<<< HEAD
+<<<<<<< HEAD
         "  -rpcport=<port>        " + _("Listen for JSON-RPC connections on <port> (default: 48484 or testnet: 18638)") + "\n" +
+=======
+        "  -rpcport=<port>        " + _("Listen for JSON-RPC connections on <port> (default: 8638 or testnet: 18638)") + "\n" +
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         "  -rpcport=<port>        " + _("Listen for JSON-RPC connections on <port> (default: 8638 or testnet: 18638)") + "\n" +
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -361,7 +418,11 @@ std::string HelpMessage()
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Initialize gamingcoin.
+=======
+/** Initialize freicoin.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** Initialize freicoin.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -509,7 +570,11 @@ bool AppInit2()
     std::string strDataDir = GetDataDir().string();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Make sure only a single gamingcoin process is using the data directory.
+=======
+    // Make sure only a single Freicoin process is using the data directory.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Make sure only a single Freicoin process is using the data directory.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -519,7 +584,11 @@ bool AppInit2()
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
 <<<<<<< HEAD
+<<<<<<< HEAD
         return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  gamingcoin is probably already running."), strDataDir.c_str()));
+=======
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  Freicoin is probably already running."), strDataDir.c_str()));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  Freicoin is probably already running."), strDataDir.c_str()));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -550,7 +619,11 @@ bool AppInit2()
         ShrinkDebugFile();
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
     printf("gamingcoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+=======
+    printf("Freicoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     printf("Freicoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -563,7 +636,11 @@ bool AppInit2()
 
     if (fDaemon)
 <<<<<<< HEAD
+<<<<<<< HEAD
         fprintf(stdout, "gamingcoin server starting\n");
+=======
+        fprintf(stdout, "Freicoin server starting\n");
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         fprintf(stdout, "Freicoin server starting\n");
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -599,7 +676,11 @@ bool AppInit2()
                                      " your balance or transactions are incorrect you should"
                                      " restore from a backup."), strDataDir.c_str());
 <<<<<<< HEAD
+<<<<<<< HEAD
             uiInterface.ThreadSafeMessageBox(msg, _("gamingcoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+=======
+            uiInterface.ThreadSafeMessageBox(msg, _("Freicoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             uiInterface.ThreadSafeMessageBox(msg, _("Freicoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -740,7 +821,11 @@ bool AppInit2()
 
     // as LoadBlockIndex can take several minutes, it's possible the user
 <<<<<<< HEAD
+<<<<<<< HEAD
     // requested to kill gamingcoin-qt during the last operation. If so, exit.
+=======
+    // requested to kill freicoin-qt during the last operation. If so, exit.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // requested to kill freicoin-qt during the last operation. If so, exit.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -798,6 +883,7 @@ bool AppInit2()
             string msg(_("Warning: error reading wallet.dat! All keys read correctly, but transaction data"
                          " or address book entries might be missing or incorrect."));
 <<<<<<< HEAD
+<<<<<<< HEAD
             uiInterface.ThreadSafeMessageBox(msg, _("gamingcoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
@@ -806,6 +892,8 @@ bool AppInit2()
         {
             strErrors << _("Wallet needed to be rewritten: restart gamingcoin to complete") << "\n";
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             uiInterface.ThreadSafeMessageBox(msg, _("Freicoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
@@ -813,6 +901,9 @@ bool AppInit2()
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
             strErrors << _("Wallet needed to be rewritten: restart Freicoin to complete") << "\n";
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             printf("%s", strErrors.str().c_str());
             return InitError(strErrors.str());

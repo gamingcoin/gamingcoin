@@ -60,7 +60,11 @@
          </item>
          <item>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <widget class="gamingcoinAmountField" name="transactionFee"/>
+=======
+          <widget class="FreicoinAmountField" name="transactionFee"/>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <widget class="FreicoinAmountField" name="transactionFee"/>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -82,6 +86,7 @@
        </item>
        <item>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <widget class="QCheckBox" name="gamingcoinAtStartup">
          <property name="toolTip">
           <string>Automatically start gamingcoin after logging in to the system.</string>
@@ -89,12 +94,17 @@
          <property name="text">
           <string>&amp;Start gamingcoin on system login</string>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <widget class="QCheckBox" name="freicoinAtStartup">
          <property name="toolTip">
           <string>Automatically start Freicoin after logging in to the system.</string>
          </property>
          <property name="text">
           <string>&amp;Start Freicoin on system login</string>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
          </property>
         </widget>
@@ -133,7 +143,11 @@
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>Automatically open the gamingcoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+=======
+          <string>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <string>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -147,7 +161,11 @@
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>Connect to the gamingcoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+=======
+          <string>Connect to the Freicoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <string>Connect to the Freicoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -325,7 +343,11 @@
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <string>The user interface language can be set here. This setting will take effect after restarting gamingcoin.</string>
+=======
+            <string>The user interface language can be set here. This setting will take effect after restarting Freicoin.</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <string>The user interface language can be set here. This setting will take effect after restarting Freicoin.</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -362,7 +384,11 @@
         <widget class="QCheckBox" name="displayAddresses">
          <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>Whether to show gamingcoin addresses in the transaction list or not.</string>
+=======
+          <string>Whether to show Freicoin addresses in the transaction list or not.</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <string>Whether to show Freicoin addresses in the transaction list or not.</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -470,9 +496,15 @@
  <customwidgets>
   <customwidget>
 <<<<<<< HEAD
+<<<<<<< HEAD
    <class>gamingcoinAmountField</class>
    <extends>QSpinBox</extends>
    <header>gamingcoinamountfield.h</header>
+=======
+   <class>FreicoinAmountField</class>
+   <extends>QSpinBox</extends>
+   <header>freicoinamountfield.h</header>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
    <class>FreicoinAmountField</class>
    <extends>QSpinBox</extends>

@@ -2,7 +2,11 @@
 #include "ui_sendcoinsentry.h"
 #include "guiutil.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinunits.h"
+=======
+#include "freicoinunits.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinunits.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -28,7 +32,11 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
 <<<<<<< HEAD
+<<<<<<< HEAD
     ui->payTo->setPlaceholderText(tr("Enter a gamingcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
+=======
+    ui->payTo->setPlaceholderText(tr("Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     ui->payTo->setPlaceholderText(tr("Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

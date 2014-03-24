@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 gamingcoin-Qt: Qt4 GUI for gamingcoin
+=======
+Freicoin-Qt: Qt4 GUI for Freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 Freicoin-Qt: Qt4 GUI for Freicoin
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -28,9 +32,15 @@ then execute the following:
     make
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Alternatively, install `Qt Creator`_ and open the `gamingcoin-qt.pro` file.
 
 An executable named `gamingcoin-qt` will be built.
+=======
+Alternatively, install `Qt Creator`_ and open the `freicoin-qt.pro` file.
+
+An executable named `freicoin-qt` will be built.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 Alternatively, install `Qt Creator`_ and open the `freicoin-qt.pro` file.
 
@@ -85,7 +95,11 @@ UPnP port forwarding
 ---------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable gamingcoin experience), pass the following argument to qmake:
+=======
+To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable freicoin experience), pass the following argument to qmake:
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable freicoin experience), pass the following argument to qmake:
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -137,9 +151,15 @@ Berkely DB version warning
 ==========================
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 A warning for people using the *static binary* version of gamingcoin on a Linux/UNIX-ish system (tl;dr: **Berkely DB databases are not forward compatible**).
 
 The static binary version of gamingcoin is linked against libdb4.8 (see also `this Debian issue`_).
+=======
+A warning for people using the *static binary* version of Freicoin on a Linux/UNIX-ish system (tl;dr: **Berkely DB databases are not forward compatible**).
+
+The static binary version of Freicoin is linked against libdb4.8 (see also `this Debian issue`_).
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 A warning for people using the *static binary* version of Freicoin on a Linux/UNIX-ish system (tl;dr: **Berkely DB databases are not forward compatible**).
 
@@ -160,7 +180,11 @@ Ubuntu 11.10 warning
 
 Ubuntu 11.10 has a package called 'qt-at-spi' installed by default.  At the time of writing, having that package
 <<<<<<< HEAD
+<<<<<<< HEAD
 installed causes gamingcoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
+=======
+installed causes freicoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 installed causes freicoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

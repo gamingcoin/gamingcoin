@@ -18,25 +18,36 @@ void URITests::uriTests()
     SendCoinsRecipient rv;
     QUrl uri;
 <<<<<<< HEAD
+<<<<<<< HEAD
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-dontexist="));
     QVERIFY(!GUIUtil::parsegamingcoinURI(uri, &rv));
 
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?dontexist="));
     QVERIFY(GUIUtil::parsegamingcoinURI(uri, &rv));
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-dontexist="));
     QVERIFY(!GUIUtil::parseFreicoinURI(uri, &rv));
 
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?dontexist="));
     QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     QVERIFY(rv.address == QString("175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"));
     QVERIFY(rv.label == QString());
     QVERIFY(rv.amount == 0);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Wikipedia Example Address"));
     QVERIFY(GUIUtil::parsegamingcoinURI(uri, &rv));
+=======
+    uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Wikipedia Example Address"));
+    QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Wikipedia Example Address"));
     QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
@@ -46,8 +57,13 @@ void URITests::uriTests()
     QVERIFY(rv.amount == 0);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=0.001"));
     QVERIFY(GUIUtil::parsegamingcoinURI(uri, &rv));
+=======
+    uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=0.001"));
+    QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=0.001"));
     QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
@@ -57,8 +73,13 @@ void URITests::uriTests()
     QVERIFY(rv.amount == 100000);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=1.001"));
     QVERIFY(GUIUtil::parsegamingcoinURI(uri, &rv));
+=======
+    uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=1.001"));
+    QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=1.001"));
     QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
@@ -68,8 +89,13 @@ void URITests::uriTests()
     QVERIFY(rv.amount == 100100000);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=100&label=Wikipedia Example"));
     QVERIFY(GUIUtil::parsegamingcoinURI(uri, &rv));
+=======
+    uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=100&label=Wikipedia Example"));
+    QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=100&label=Wikipedia Example"));
     QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
@@ -79,6 +105,7 @@ void URITests::uriTests()
     QVERIFY(rv.label == QString("Wikipedia Example"));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?message=Wikipedia Example Address"));
     QVERIFY(GUIUtil::parsegamingcoinURI(uri, &rv));
     QVERIFY(rv.address == QString("175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"));
@@ -86,17 +113,23 @@ void URITests::uriTests()
 
     QVERIFY(GUIUtil::parsegamingcoinURI("gamingcoin://175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?message=Wikipedia Example Address", &rv));
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?message=Wikipedia Example Address"));
     QVERIFY(GUIUtil::parseFreicoinURI(uri, &rv));
     QVERIFY(rv.address == QString("175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"));
     QVERIFY(rv.label == QString());
 
     QVERIFY(GUIUtil::parseFreicoinURI("freicoin://175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?message=Wikipedia Example Address", &rv));
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     QVERIFY(rv.address == QString("175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W"));
     QVERIFY(rv.label == QString());
 
     // We currently don't implement the message parameter (ok, yea, we break spec...)
+<<<<<<< HEAD
 <<<<<<< HEAD
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-message=Wikipedia Example Address"));
     QVERIFY(!GUIUtil::parsegamingcoinURI(uri, &rv));
@@ -107,6 +140,8 @@ void URITests::uriTests()
     uri.setUrl(QString("gamingcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=1,000.0&label=Wikipedia Example"));
     QVERIFY(!GUIUtil::parsegamingcoinURI(uri, &rv));
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?req-message=Wikipedia Example Address"));
     QVERIFY(!GUIUtil::parseFreicoinURI(uri, &rv));
 
@@ -115,5 +150,8 @@ void URITests::uriTests()
 
     uri.setUrl(QString("freicoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=1,000.0&label=Wikipedia Example"));
     QVERIFY(!GUIUtil::parseFreicoinURI(uri, &rv));
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 }

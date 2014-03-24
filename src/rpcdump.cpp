@@ -4,7 +4,11 @@
 
 #include "init.h" // for pwalletMain
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "gamingcoinrpc.h"
+=======
+#include "freicoinrpc.h"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #include "freicoinrpc.h"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -41,7 +45,11 @@ Value importprivkey(const Array& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "importprivkey <gamingcoinprivkey> [label]\n"
+=======
+            "importprivkey <freicoinprivkey> [label]\n"
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             "importprivkey <freicoinprivkey> [label]\n"
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -52,7 +60,11 @@ Value importprivkey(const Array& params, bool fHelp)
     if (params.size() > 1)
         strLabel = params[1].get_str();
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinSecret vchSecret;
+=======
+    CFreicoinSecret vchSecret;
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinSecret vchSecret;
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -86,6 +98,7 @@ Value dumpprivkey(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "dumpprivkey <gamingcoinaddress>\n"
             "Reveals the private key corresponding to <gamingcoinaddress>.");
 
@@ -94,6 +107,8 @@ Value dumpprivkey(const Array& params, bool fHelp)
     if (!address.SetString(strAddress))
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid gamingcoin address");
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
             "dumpprivkey <freicoinaddress>\n"
             "Reveals the private key corresponding to <freicoinaddress>.");
 
@@ -101,6 +116,9 @@ Value dumpprivkey(const Array& params, bool fHelp)
     CFreicoinAddress address;
     if (!address.SetString(strAddress))
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Freicoin address");
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     CKeyID keyID;
     if (!address.GetKeyID(keyID))
@@ -110,7 +128,11 @@ Value dumpprivkey(const Array& params, bool fHelp)
     if (!pwalletMain->GetSecret(keyID, vchSecret, fCompressed))
         throw JSONRPCError(RPC_WALLET_ERROR, "Private key for address " + strAddress + " is not known");
 <<<<<<< HEAD
+<<<<<<< HEAD
     return CgamingcoinSecret(vchSecret, fCompressed).ToString();
+=======
+    return CFreicoinSecret(vchSecret, fCompressed).ToString();
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return CFreicoinSecret(vchSecret, fCompressed).ToString();
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -10,7 +10,11 @@ class WalletModel;
 class SendCoinsRecipient;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** A single entry in the dialog for sending gamingcoins. */
+=======
+/** A single entry in the dialog for sending freicoins. */
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** A single entry in the dialog for sending freicoins. */
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

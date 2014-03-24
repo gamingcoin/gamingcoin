@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # bash programmable completion for gamingcoind(1)
+=======
+# bash programmable completion for freicoind(1)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 # bash programmable completion for freicoind(1)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -8,15 +12,21 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 have gamingcoind && {
 
 # call $gamingcoind for RPC
 _gamingcoin_rpc() {
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 have freicoind && {
 
 # call $freicoind for RPC
 _freicoin_rpc() {
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     # determine already specified args necessary for RPC
     local rpcargs=()
@@ -27,6 +37,7 @@ _freicoin_rpc() {
                 ;;
         esac
     done
+<<<<<<< HEAD
 <<<<<<< HEAD
     $gamingcoind "${rpcargs[@]}" "$@"
 }
@@ -46,6 +57,8 @@ _gamingcoind() {
     # gamingcoind might not be in $PATH
     gamingcoind="$1"
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     $freicoind "${rpcargs[@]}" "$@"
 }
 
@@ -63,6 +76,9 @@ _freicoind() {
     # save and use original argument to invoke freicoind
     # freicoind might not be in $PATH
     freicoind="$1"
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 
     COMPREPLY=()
@@ -76,7 +92,11 @@ _freicoind() {
                 ;;
             move|setaccount)
 <<<<<<< HEAD
+<<<<<<< HEAD
                 _gamingcoin_accounts
+=======
+                _freicoin_accounts
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 _freicoin_accounts
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -96,7 +116,11 @@ _freicoind() {
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
 <<<<<<< HEAD
+<<<<<<< HEAD
             _gamingcoin_accounts
+=======
+            _freicoin_accounts
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             _freicoin_accounts
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -124,7 +148,11 @@ _freicoind() {
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
 <<<<<<< HEAD
+<<<<<<< HEAD
                 helpopts=$($gamingcoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+=======
+                helpopts=$($freicoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 helpopts=$($freicoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -133,7 +161,11 @@ _freicoind() {
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
 <<<<<<< HEAD
+<<<<<<< HEAD
                 commands=$(_gamingcoin_rpc help 2>/dev/null | awk '{ print $1; }')
+=======
+                commands=$(_freicoin_rpc help 2>/dev/null | awk '{ print $1; }')
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 commands=$(_freicoin_rpc help 2>/dev/null | awk '{ print $1; }')
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -151,7 +183,11 @@ _freicoind() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 complete -F _gamingcoind gamingcoind
+=======
+complete -F _freicoind freicoind
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 complete -F _freicoind freicoind
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

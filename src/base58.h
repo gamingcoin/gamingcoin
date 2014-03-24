@@ -13,8 +13,13 @@
 // - Double-clicking selects the whole number as one word if it's all alphanumeric.
 //
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifndef gamingcoin_BASE58_H
 #define gamingcoin_BASE58_H
+=======
+#ifndef FREICOIN_BASE58_H
+#define FREICOIN_BASE58_H
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 #ifndef FREICOIN_BASE58_H
 #define FREICOIN_BASE58_H
@@ -259,7 +264,11 @@ public:
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** base58-encoded gamingcoin addresses.
+=======
+/** base58-encoded Freicoin addresses.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** base58-encoded Freicoin addresses.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -269,6 +278,7 @@ public:
  * The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class CgamingcoinAddress;
 class CgamingcoinAddressVisitor : public boost::static_visitor<bool>
 {
@@ -277,6 +287,8 @@ private:
 public:
     CgamingcoinAddressVisitor(CgamingcoinAddress *addrIn) : addr(addrIn) { }
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 class CFreicoinAddress;
 class CFreicoinAddressVisitor : public boost::static_visitor<bool>
 {
@@ -284,6 +296,9 @@ private:
     CFreicoinAddress *addr;
 public:
     CFreicoinAddressVisitor(CFreicoinAddress *addrIn) : addr(addrIn) { }
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     bool operator()(const CKeyID &id) const;
     bool operator()(const CScriptID &id) const;
@@ -291,7 +306,11 @@ public:
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class CgamingcoinAddress : public CBase58Data
+=======
+class CFreicoinAddress : public CBase58Data
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 class CFreicoinAddress : public CBase58Data
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -300,7 +319,11 @@ public:
     enum
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         PUBKEY_ADDRESS = 15,
+=======
+        PUBKEY_ADDRESS = 0,
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         PUBKEY_ADDRESS = 0,
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -322,7 +345,11 @@ public:
     bool Set(const CTxDestination &dest)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return boost::apply_visitor(CgamingcoinAddressVisitor(this), dest);
+=======
+        return boost::apply_visitor(CFreicoinAddressVisitor(this), dest);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         return boost::apply_visitor(CFreicoinAddressVisitor(this), dest);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -359,24 +386,34 @@ public:
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress()
     {
     }
 
     CgamingcoinAddress(const CTxDestination &dest)
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     CFreicoinAddress()
     {
     }
 
     CFreicoinAddress(const CTxDestination &dest)
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     {
         Set(dest);
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress(const std::string& strAddress)
+=======
+    CFreicoinAddress(const std::string& strAddress)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress(const std::string& strAddress)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -385,7 +422,11 @@ public:
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinAddress(const char* pszAddress)
+=======
+    CFreicoinAddress(const char* pszAddress)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinAddress(const char* pszAddress)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -459,6 +500,7 @@ public:
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 bool inline CgamingcoinAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
 bool inline CgamingcoinAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
 bool inline CgamingcoinAddressVisitor::operator()(const CNoDestination &id) const { return false; }
@@ -466,12 +508,17 @@ bool inline CgamingcoinAddressVisitor::operator()(const CNoDestination &id) cons
 /** A base58-encoded secret key */
 class CgamingcoinSecret : public CBase58Data
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 bool inline CFreicoinAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
 bool inline CFreicoinAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
 bool inline CFreicoinAddressVisitor::operator()(const CNoDestination &id) const { return false; }
 
 /** A base58-encoded secret key */
 class CFreicoinSecret : public CBase58Data
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 {
 public:
@@ -521,7 +568,11 @@ public:
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinSecret(const CSecret& vchSecret, bool fCompressed)
+=======
+    CFreicoinSecret(const CSecret& vchSecret, bool fCompressed)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinSecret(const CSecret& vchSecret, bool fCompressed)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -530,7 +581,11 @@ public:
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CgamingcoinSecret()
+=======
+    CFreicoinSecret()
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     CFreicoinSecret()
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

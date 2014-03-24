@@ -1250,7 +1250,11 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, mpq> >& vecSend, int 
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // change transaction isn't always pay-to-gamingcoin-address
+=======
+                    // change transaction isn't always pay-to-freicoin-address
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                     // change transaction isn't always pay-to-freicoin-address
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1411,7 +1415,11 @@ string CWallet::SendMoneyToDestination(const CTxDestination& address, const mpq&
         return _("Insufficient funds");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Parse gamingcoin address
+=======
+    // Parse Freicoin address
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     // Parse Freicoin address
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1458,7 +1466,11 @@ bool CWallet::SetAddressBookName(const CTxDestination& address, const string& st
     if (!fFileBacked)
         return false;
 <<<<<<< HEAD
+<<<<<<< HEAD
     return CWalletDB(strWalletFile).WriteName(CgamingcoinAddress(address).ToString(), strName);
+=======
+    return CWalletDB(strWalletFile).WriteName(CFreicoinAddress(address).ToString(), strName);
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return CWalletDB(strWalletFile).WriteName(CFreicoinAddress(address).ToString(), strName);
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1471,7 +1483,11 @@ bool CWallet::DelAddressBookName(const CTxDestination& address)
     if (!fFileBacked)
         return false;
 <<<<<<< HEAD
+<<<<<<< HEAD
     return CWalletDB(strWalletFile).EraseName(CgamingcoinAddress(address).ToString());
+=======
+    return CWalletDB(strWalletFile).EraseName(CFreicoinAddress(address).ToString());
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     return CWalletDB(strWalletFile).EraseName(CFreicoinAddress(address).ToString());
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

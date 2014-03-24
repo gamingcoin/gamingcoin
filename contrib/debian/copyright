@@ -1,5 +1,6 @@
 Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=174
 <<<<<<< HEAD
+<<<<<<< HEAD
 Upstream-Name: GamingCoin
 Upstream-Contact: Gaming Coin <gmgcoin@gmail.com>
  irc://#GamingCoin@freenode.net
@@ -9,6 +10,8 @@ Files: *
 Copyright: 2009-2012, Bitcoin Developers
            2012, GamingCoin Developers
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Upstream-Name: Freicoin
 Upstream-Contact: Mark Friedenbach <mark@monetize.io>
  irc://#freicoin@freenode.net
@@ -17,6 +20,9 @@ Source: https://github.com/freicoin/freicoin
 Files: *
 Copyright: 2009-2012, Bitcoin Developers
            2012, Freicoin Developers
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 License: Expat
 Comment: The Bitcoin Developers encompasses the current developers listed on bitcoin.org,
@@ -81,7 +87,11 @@ License: LGPL
 Comment: Icon Pack: Crystal SVG
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Files: src/qt/res/icons/GamingCoin.png, src/qt/res/icons/toolbar.png
+=======
+Files: src/qt/res/icons/freicoin.png, src/qt/res/icons/toolbar.png
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 Files: src/qt/res/icons/freicoin.png, src/qt/res/icons/toolbar.png
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

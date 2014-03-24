@@ -94,7 +94,11 @@ void EditAddressDialog::accept()
         case AddressTableModel::INVALID_ADDRESS:
             QMessageBox::warning(this, windowTitle(),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 tr("The entered address \"%1\" is not a valid gamingcoin address.").arg(ui->addressEdit->text()),
+=======
+                tr("The entered address \"%1\" is not a valid Freicoin address.").arg(ui->addressEdit->text()),
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
                 tr("The entered address \"%1\" is not a valid Freicoin address.").arg(ui->addressEdit->text()),
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

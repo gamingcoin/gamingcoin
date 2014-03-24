@@ -6,7 +6,11 @@
 #include <QAbstractListModel>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /** Interface from Qt to configuration data structure for gamingcoin client.
+=======
+/** Interface from Qt to configuration data structure for Freicoin client.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 /** Interface from Qt to configuration data structure for Freicoin client.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -33,7 +37,11 @@ public:
         ProxySocksVersion, // int
         Fee,               // mpq serialized as QString
 <<<<<<< HEAD
+<<<<<<< HEAD
         DisplayUnit,       // gamingcoinUnits::Unit
+=======
+        DisplayUnit,       // FreicoinUnits::Unit
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         DisplayUnit,       // FreicoinUnits::Unit
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

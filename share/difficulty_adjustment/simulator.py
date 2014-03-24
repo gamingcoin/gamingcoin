@@ -104,7 +104,11 @@ def xfrange(x, y, step):
 if __name__ == '__main__':
     frc = history_from_csv('frc.csv')
 <<<<<<< HEAD
+<<<<<<< HEAD
     print(u"gamingcoin historical error: %f" % utility_function([(t,d) for n,t,d in frc]))
+=======
+    print(u"Freicoin historical error: %f" % utility_function([(t,d) for n,t,d in frc]))
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     print(u"Freicoin historical error: %f" % utility_function([(t,d) for n,t,d in frc]))
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

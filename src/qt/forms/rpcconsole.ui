@@ -12,7 +12,11 @@
   </property>
   <property name="windowTitle">
 <<<<<<< HEAD
+<<<<<<< HEAD
    <string>gamingcoin - Debug window</string>
+=======
+   <string>Freicoin - Debug window</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
    <string>Freicoin - Debug window</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -41,7 +45,11 @@
          </property>
          <property name="text">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>gamingcoin Core</string>
+=======
+          <string>Freicoin Core</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <string>Freicoin Core</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -331,7 +339,11 @@
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>Open the gamingcoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
+=======
+          <string>Open the Freicoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <string>Open the Freicoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -361,7 +373,11 @@
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <string>Show the gamingcoin-Qt help message to get a list with possible gamingcoin command-line options.</string>
+=======
+          <string>Show the Freicoin-Qt help message to get a list with possible Freicoin command-line options.</string>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
           <string>Show the Freicoin-Qt help message to get a list with possible Freicoin command-line options.</string>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -447,7 +463,11 @@
            </property>
            <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <iconset resource="../gamingcoin.qrc">
+=======
+            <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
             <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -471,7 +491,11 @@
  </widget>
  <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <include location="../gamingcoin.qrc"/>
+=======
+  <include location="../freicoin.qrc"/>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   <include location="../freicoin.qrc"/>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

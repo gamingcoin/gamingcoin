@@ -4,7 +4,11 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Mac OS X makefile for gamingcoin
+=======
+# Mac OS X makefile for freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 # Mac OS X makefile for freicoin
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -32,7 +36,11 @@ TESTDEFS = -DTEST_DATA_DIR=$(abspath test/data)
 
 ifdef STATIC
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Build STATIC if you are redistributing the gamingcoind binary
+=======
+# Build STATIC if you are redistributing the freicoind binary
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 # Build STATIC if you are redistributing the freicoind binary
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -99,7 +107,11 @@ OBJS= \
     obj/net.o \
     obj/protocol.o \
 <<<<<<< HEAD
+<<<<<<< HEAD
     obj/gamingcoinrpc.o \
+=======
+    obj/freicoinrpc.o \
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     obj/freicoinrpc.o \
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -133,7 +145,11 @@ ifneq (${USE_IPV6}, -)
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 all: gamingcoind
+=======
+all: freicoind
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 all: freicoind
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -158,7 +174,11 @@ obj/%.o: %.cpp
 	  rm -f $(@:%.o=%.d)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 gamingcoind: $(OBJS:obj/%=obj/%)
+=======
+freicoind: $(OBJS:obj/%=obj/%)
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 freicoind: $(OBJS:obj/%=obj/%)
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -174,17 +194,23 @@ obj-test/%.o: test/%.cpp
 	  rm -f $(@:%.o=%.d)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 test_gamingcoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
 
 clean:
 	-rm -f gamingcoind test_gamingcoin
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 test_freicoin: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS) $(TESTLIBS)
 
 clean:
 	-rm -f freicoind test_freicoin
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o

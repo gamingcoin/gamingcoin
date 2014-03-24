@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Building gamingcoin
 
 See doc/readme-qt.rst for instructions on building gamingcoin-Qt,
@@ -9,6 +10,8 @@ See doc/build-*.txt for instructions on building gamingcoind,
 the intended-for-services, no-graphical-interface, reference
 implementation of gamingcoin.
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Building Freicoin
 
 See doc/readme-qt.rst for instructions on building Freicoin-Qt,
@@ -17,5 +20,9 @@ implementation of Freicoin.
 
 See doc/build-*.txt for instructions on building freicoind,
 the intended-for-services, no-graphical-interface, reference
+<<<<<<< HEAD
+implementation of Freicoin.
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 implementation of Freicoin.
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -8,7 +8,11 @@ software written by Thomas Bernard.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mac OS X gamingcoind build instructions
+=======
+Mac OS X freicoind build instructions
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 Mac OS X freicoind build instructions
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -17,7 +21,11 @@ Douglas Huff <dhuff@jrbobdobbs.org>
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See readme-qt.rst for instructions on building gamingcoin-Qt, the
+=======
+See readme-qt.rst for instructions on building Freicoin-Qt, the
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 See readme-qt.rst for instructions on building Freicoin-Qt, the
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -36,7 +44,11 @@ install DVD, but if not, you can get the current version from https://developer.
 1.  Clone the github tree to get the source code:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 git clone git@github.com:gamingcoin/gamingcoin.git gamingcoin
+=======
+git clone git@github.com:freicoin/freicoin.git freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 git clone git@github.com:freicoin/freicoin.git freicoin
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -54,6 +66,7 @@ Optionally install qrencode (and set USE_QRCODE=1):
 sudo port install qrencode
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 4.  Now you should be able to build gamingcoind:
 
 cd gamingcoin/src
@@ -66,6 +79,8 @@ Run
 Run
   ./gamingcoind help # When the daemon is running, to get a list of RPC commands
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 4.  Now you should be able to build freicoind:
 
 cd freicoin/src
@@ -77,4 +92,7 @@ Run
   ./freicoind -daemon # to start the freicoin daemon.
 Run
   ./freicoind help # When the daemon is running, to get a list of RPC commands
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

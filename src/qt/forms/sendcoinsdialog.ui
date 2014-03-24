@@ -68,7 +68,11 @@
        </property>
        <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <iconset resource="../gamingcoin.qrc">
+=======
+        <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -95,7 +99,11 @@
        </property>
        <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <iconset resource="../gamingcoin.qrc">
+=======
+        <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -165,7 +173,11 @@
        </property>
        <property name="icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <iconset resource="../gamingcoin.qrc">
+=======
+        <iconset resource="../freicoin.qrc">
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <iconset resource="../freicoin.qrc">
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -182,7 +194,11 @@
  </widget>
  <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <include location="../gamingcoin.qrc"/>
+=======
+  <include location="../freicoin.qrc"/>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
   <include location="../freicoin.qrc"/>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

@@ -15,9 +15,15 @@ To Build
 
 cd src/
 <<<<<<< HEAD
+<<<<<<< HEAD
 make -f makefile.unix            # Headless gamingcoin
 
 See readme-qt.rst for instructions on building gamingcoin-Qt,
+=======
+make -f makefile.unix            # Headless freicoin
+
+See readme-qt.rst for instructions on building Freicoin-Qt,
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 make -f makefile.unix            # Headless freicoin
 
@@ -92,9 +98,15 @@ Dependency Build Instructions: Gentoo
 -------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Note: If you just want to install gamingcoind on Gentoo, you can add the gamingcoin
       overlay and use your package manager:
           layman -a gamingcoin && emerge gamingcoind
+=======
+Note: If you just want to install freicoind on Gentoo, you can add the Freicoin
+      overlay and use your package manager:
+          layman -a freicoin && emerge freicoind
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 Note: If you just want to install freicoind on Gentoo, you can add the Freicoin
       overlay and use your package manager:
@@ -105,9 +117,15 @@ emerge -av1 --noreplace boost glib openssl sys-libs/db:4.8
 
 Take the following steps to build (no UPnP support):
 <<<<<<< HEAD
+<<<<<<< HEAD
  cd ${gamingcoin_DIR}/src
  make -f makefile.unix USE_UPNP= USE_IPV6=1 BDB_INCLUDE_PATH='/usr/include/db4.8'
  strip gamingcoind
+=======
+ cd ${FREICOIN_DIR}/src
+ make -f makefile.unix USE_UPNP= USE_IPV6=1 BDB_INCLUDE_PATH='/usr/include/db4.8'
+ strip freicoind
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
  cd ${FREICOIN_DIR}/src
  make -f makefile.unix USE_UPNP= USE_IPV6=1 BDB_INCLUDE_PATH='/usr/include/db4.8'
@@ -118,7 +136,11 @@ Take the following steps to build (no UPnP support):
 Notes
 -----
 <<<<<<< HEAD
+<<<<<<< HEAD
 The release is built with GCC and then "strip gamingcoind" to strip the debug
+=======
+The release is built with GCC and then "strip freicoind" to strip the debug
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 The release is built with GCC and then "strip freicoind" to strip the debug
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -152,7 +174,11 @@ sudo su
 Security
 --------
 <<<<<<< HEAD
+<<<<<<< HEAD
 To help make your gamingcoin installation more secure by making certain attacks impossible to
+=======
+To help make your freicoin installation more secure by making certain attacks impossible to
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
 To help make your freicoin installation more secure by making certain attacks impossible to
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -173,7 +199,11 @@ exploit even if a vulnerability is found, you can take the following measures:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scanelf -e ./gamingcoin
+=======
+    scanelf -e ./freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     scanelf -e ./freicoin
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -185,7 +215,11 @@ exploit even if a vulnerability is found, you can take the following measures:
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
 <<<<<<< HEAD
+<<<<<<< HEAD
     vulnerable buffers are found. By default, gamingcoin should be built with a non-executable stack
+=======
+    vulnerable buffers are found. By default, freicoin should be built with a non-executable stack
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     vulnerable buffers are found. By default, freicoin should be built with a non-executable stack
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -195,7 +229,11 @@ exploit even if a vulnerability is found, you can take the following measures:
 
     To verify that the stack is non-executable after compiling use:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scanelf -e ./gamingcoin
+=======
+    scanelf -e ./freicoin
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
     scanelf -e ./freicoin
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149

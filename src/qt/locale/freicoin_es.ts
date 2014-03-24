@@ -7,6 +7,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>About Gamingcoin</source>
         <translation>Sobre Gamingcoin</translation>
     </message>
@@ -15,6 +16,8 @@
         <source>&lt;b&gt;Gamingcoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Gamingcoin&lt;/b&gt; version</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>About Freicoin</source>
         <translation>Sobre Freicoin</translation>
     </message>
@@ -22,11 +25,15 @@
         <location line="+39"/>
         <source>&lt;b&gt;Freicoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Freicoin&lt;/b&gt; version</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2012 Bitcoin developers
+<<<<<<< HEAD
 <<<<<<< HEAD
 Copyright © 2011-2012 Gamingcoin developers
 
@@ -42,6 +49,8 @@ El matrimonio conceptual entre el Freigeld de Gesell y Bitcoin se debe a una per
 El desarrollo inicial de Gamingcoin fue posible gracias al generoso apoyo financiero de Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis,  Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk y otros donativos anónimos.
 Por último, pero no menos importante, todos estamos en deuda con el legado de Silvio Gesell, cuya teoría de la libremoneda es la base sobre la que Gamingcoin se ha construído.</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 Copyright © 2011-2012 Freicoin developers
 
 The conceptual marriage of Gesell&apos;s Freigeld with Bitcoin is due to one individual without whom this project would never have started: Jorge Timón. The initial release would not have been possible without further contributions from developers Mark Friedenbach, Matthew Redmond, Aaron Blumenshine, and an anonymous contributor.
@@ -55,6 +64,9 @@ Copyright ©  2011-2012 Desarrolladores de Freicoin
 El matrimonio conceptual entre el Freigeld de Gesell y Bitcoin se debe a una persona sin la cual este proyecto nunca hubiese empezado: Jorge Timón. La publicación inicial no hubiese sido posible sin las contribuciones de Mark Friedenbach, Matthew Redmond, Aaron Blumenshine y otro colaborador anónimo. 
 El desarrollo inicial de Freicoin fue posible gracias al generoso apoyo financiero de Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis,  Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk y otros donativos anónimos.
 Por último, pero no menos importante, todos estamos en deuda con el legado de Silvio Gesell, cuya teoría de la libremoneda es la base sobre la que Freicoin se ha construído.</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -86,8 +98,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+6"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>These are your Gamingcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Estas son tus direcciones Gamingcoin para recibir pagos. Puedes darle una diferente a cada pagador para poder saber quién te está pagando.</translation>
+=======
+        <source>These are your Freicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Estas son tus direcciones Freicoin para recibir pagos. Puedes darle una diferente a cada pagador para poder saber quién te está pagando.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>These are your Freicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Estas son tus direcciones Freicoin para recibir pagos. Puedes darle una diferente a cada pagador para poder saber quién te está pagando.</translation>
@@ -111,8 +128,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+25"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Sign a message to prove you own a Gamingcoin address</source>
         <translation>Firma un mensaje con tu propia dirección Gamingcoin</translation>
+=======
+        <source>Sign a message to prove you own a Freicoin address</source>
+        <translation>Firma un mensaje con tu propia dirección Freicoin</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Sign a message to prove you own a Freicoin address</source>
         <translation>Firma un mensaje con tu propia dirección Freicoin</translation>
@@ -141,8 +163,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+11"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Verify a message to ensure it was signed with a specified Gamingcoin address</source>
         <translation>Verifica un mensaje para asegurarte de que ha sido firmado con una dirección Gamingcoin específica</translation>
+=======
+        <source>Verify a message to ensure it was signed with a specified Freicoin address</source>
+        <translation>Verifica un mensaje para asegurarte de que ha sido firmado con una dirección Freicoin específica</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Verify a message to ensure it was signed with a specified Freicoin address</source>
         <translation>Verifica un mensaje para asegurarte de que ha sido firmado con una dirección Freicoin específica</translation>
@@ -287,6 +314,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+0"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GamingcoinS&lt;/b&gt;!</source>
         <translation>Aviso: Si encriptas tu monedero y pierdes tu contraseña, &lt;b&gt;PERDERÁS TODOS TUS GamingcoinS&lt;/b&gt;!</translation>
     </message>
@@ -295,6 +323,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <source>Gamingcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Gamingcoins from being stolen by malware infecting your computer.</source>
         <translation>Gamingcoin se cerrará ahora para completar el proceso de encriptación. Recuerda que encriptar tu monedero no te proteje por completo del robo de tus Gamingcoins por malware infectando tu ordenador.</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FREICOINS&lt;/b&gt;!</source>
         <translation>Aviso: Si encriptas tu monedero y pierdes tu contraseña, &lt;b&gt;PERDERÁS TODOS TUS FREICOINS&lt;/b&gt;!</translation>
     </message>
@@ -302,6 +332,9 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <location line="+11"/>
         <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your freicoins from being stolen by malware infecting your computer.</source>
         <translation>Freicoin se cerrará ahora para completar el proceso de encriptación. Recuerda que encriptar tu monedero no te proteje por completo del robo de tus freicoins por malware infectando tu ordenador.</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -426,8 +459,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+5"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>The entered address &quot;%1&quot; is not a valid Gamingcoin address.</source>
         <translation>La dirección introducida &quot;%1&quot; no es una dirección Gamingcoin válida.</translation>
+=======
+        <source>The entered address &quot;%1&quot; is not a valid Freicoin address.</source>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección Freicoin válida.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>The entered address &quot;%1&quot; is not a valid Freicoin address.</source>
         <translation>La dirección introducida &quot;%1&quot; no es una dirección Freicoin válida.</translation>
@@ -446,6 +484,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>GamingcoinGUI</name>
     <message>
         <location filename="../Gamingcoin.cpp" line="+109"/>
@@ -457,6 +496,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <source>Gamingcoin</source>
         <translation>Gamingcoin</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     <name>FreicoinGUI</name>
     <message>
         <location filename="../freicoin.cpp" line="+109"/>
@@ -467,6 +508,9 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation>Freicoin</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -487,8 +531,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+6"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Send coins to a Gamingcoin address</source>
         <translation>Enviar Gamingcoins a una dirección</translation>
+=======
+        <source>Send coins to a Freicoin address</source>
+        <translation>Enviar freicoins a una dirección</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Send coins to a Freicoin address</source>
         <translation>Enviar freicoins a una dirección</translation>
@@ -542,6 +591,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+3"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>&amp;About Gamingcoin</source>
         <translation>Sobre &amp;Gamingcoin</translation>
     </message>
@@ -550,6 +600,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <source>Show information about Gamingcoin</source>
         <translation>Mostrar información sobre Gamingcoin</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>&amp;About Freicoin</source>
         <translation>Sobre &amp;Freicoin</translation>
     </message>
@@ -557,6 +609,9 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <location line="+1"/>
         <source>Show information about Freicoin</source>
         <translation>Mostrar información sobre Freicoin</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -577,8 +632,13 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message>
         <location line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Modify configuration options for Gamingcoin</source>
         <translation>Modificar opciones de configuración de Gamingcoin</translation>
+=======
+        <source>Modify configuration options for Freicoin</source>
+        <translation>Modificar opciones de configuración de Freicoin</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Modify configuration options for Freicoin</source>
         <translation>Modificar opciones de configuración de Freicoin</translation>
@@ -684,6 +744,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <location line="+0"/>
         <location line="+60"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Gamingcoin client</source>
         <translation>Cliente de Gamingcoin</translation>
     </message>
@@ -694,6 +755,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
             <numerusform>%n conexión activas a la red Gamingcoin</numerusform>
             <numerusform>%n conexiones activas a la red Gamingcoin</numerusform>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>Freicoin client</source>
         <translation>Cliente de Freicoin</translation>
     </message>
@@ -703,6 +766,9 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>
             <numerusform>%n conexión activas a la red Freicoin</numerusform>
             <numerusform>%n conexiones activas a la red Freicoin</numerusform>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         </translation>
     </message>
@@ -821,8 +887,13 @@ Dirección: %4
         <location line="-15"/>
         <location line="+15"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>URI can not be parsed! This can be caused by an invalid Gamingcoin address or malformed URI parameters.</source>
         <translation>¡La URI no puede ser gestionada! Esto puede ser causa de una dirección Gamingcoin inválida o unos parámetros de la URI mal formados.</translation>
+=======
+        <source>URI can not be parsed! This can be caused by an invalid Freicoin address or malformed URI parameters.</source>
+        <translation>¡La URI no puede ser gestionada! Esto puede ser causa de una dirección Freicoin inválida o unos parámetros de la URI mal formados.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>URI can not be parsed! This can be caused by an invalid Freicoin address or malformed URI parameters.</source>
         <translation>¡La URI no puede ser gestionada! Esto puede ser causa de una dirección Freicoin inválida o unos parámetros de la URI mal formados.</translation>
@@ -870,8 +941,13 @@ Dirección: %4
         <location line="+0"/>
         <location line="+12"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Gamingcoin-Qt</source>
         <translation>Gamingcoin-Qt</translation>
+=======
+        <source>Freicoin-Qt</source>
+        <translation>Freicoin-Qt</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Freicoin-Qt</source>
         <translation>Freicoin-Qt</translation>
@@ -948,6 +1024,7 @@ Dirección: %4
     <message>
         <location line="-43"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Automatically start Gamingcoin after logging in to the system.</source>
         <translation>Lanzar Gamingcoin automáticamente al entrar en el sistema</translation>
     </message>
@@ -956,6 +1033,8 @@ Dirección: %4
         <source>&amp;Start Gamingcoin on system login</source>
         <translation>Lan&amp;zar Gamingcoin al entrar en el sistema</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>Automatically start Freicoin after logging in to the system.</source>
         <translation>Lanzar Freicoin automáticamente al entrar en el sistema</translation>
     </message>
@@ -963,6 +1042,9 @@ Dirección: %4
         <location line="+3"/>
         <source>&amp;Start Freicoin on system login</source>
         <translation>Lan&amp;zar Freicoin al entrar en el sistema</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -973,6 +1055,7 @@ Dirección: %4
     <message>
         <location line="+27"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Automatically open the Gamingcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir automáticamente el puerto del cliente de Gamingcoin en el router. Esto sólo funciona si tu router soporta UPnP y está habilitado</translation>
     </message>
@@ -981,6 +1064,8 @@ Dirección: %4
         <source>Connect to the Gamingcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Conectar a la red Gamingcoin a través de un proxy SOCKS (Ej.: cuando se conecta desde Tor)</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir automáticamente el puerto del cliente de Freicoin en el router. Esto sólo funciona si tu router soporta UPnP y está habilitado</translation>
     </message>
@@ -988,6 +1073,9 @@ Dirección: %4
         <location line="+10"/>
         <source>Connect to the Freicoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Conectar a la red Freicoin a través de un proxy SOCKS (Ej.: cuando se conecta desde Tor)</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -1058,6 +1146,7 @@ Dirección: %4
     <message>
         <location line="+13"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>The user interface language can be set here. This setting will take effect after restarting Gamingcoin.</source>
         <translation>El lenguaje de la interfaz de usuario se puede establecer aquí. Esta configuración tendrá efecto tras reiniciar Gamingcoin.</translation>
     </message>
@@ -1066,6 +1155,8 @@ Dirección: %4
         <source>Whether to show Gamingcoin addresses in the transaction list or not.</source>
         <translation>Mostrar las direcciones Gamingcoin en la lista de transacciones o no hacerlo.</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>The user interface language can be set here. This setting will take effect after restarting Freicoin.</source>
         <translation>El lenguaje de la interfaz de usuario se puede establecer aquí. Esta configuración tendrá efecto tras reiniciar Freicoin.</translation>
     </message>
@@ -1073,6 +1164,9 @@ Dirección: %4
         <location line="+33"/>
         <source>Whether to show Freicoin addresses in the transaction list or not.</source>
         <translation>Mostrar las direcciones Freicoin en la lista de transacciones o no hacerlo.</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -1125,8 +1219,13 @@ Dirección: %4
         <location line="-9"/>
         <location line="+9"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>This setting will take effect after restarting Gamingcoin.</source>
         <translation>Esta configuración tendrá efecto tras reiniciar Gamingcoin.</translation>
+=======
+        <source>This setting will take effect after restarting Freicoin.</source>
+        <translation>Esta configuración tendrá efecto tras reiniciar Freicoin.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>This setting will take effect after restarting Freicoin.</source>
         <translation>Esta configuración tendrá efecto tras reiniciar Freicoin.</translation>
@@ -1169,8 +1268,13 @@ Dirección: %4
         <location line="+7"/>
         <location line="+183"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Gamingcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>La información mostrada puede estar desactualizada. Tu monedero se sincroniza automaticamente con la red Gamingcoin después de que se establezca una conexión, pero este proceso no se ha completado todavía.</translation>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Tu monedero se sincroniza automaticamente con la red Freicoin después de que se establezca una conexión, pero este proceso no se ha completado todavía.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</source>
         <translation>La información mostrada puede estar desactualizada. Tu monedero se sincroniza automaticamente con la red Freicoin después de que se establezca una conexión, pero este proceso no se ha completado todavía.</translation>
@@ -1305,6 +1409,7 @@ Dirección: %4
     <message>
         <location line="-10"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Gamingcoin - Debug window</source>
         <translation>Gamingcoin - ventana de depuración</translation>
     </message>
@@ -1313,6 +1418,8 @@ Dirección: %4
         <source>Gamingcoin Core</source>
         <translation>Núcleo de Gamingcoin</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>Freicoin - Debug window</source>
         <translation>Freicoin - ventana de depuración</translation>
     </message>
@@ -1320,6 +1427,9 @@ Dirección: %4
         <location line="+25"/>
         <source>Freicoin Core</source>
         <translation>Núcleo de Freicoin</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -1370,7 +1480,11 @@ Dirección: %4
     <message>
         <location line="+49"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Open the Gamingcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+=======
+        <source>Open the Freicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Open the Freicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -1389,8 +1503,13 @@ Dirección: %4
     <message>
         <location line="+7"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Show the Gamingcoin-Qt help message to get a list with possible Gamingcoin command-line options.</source>
         <translation>Mostrar el mensaje de ayuda de Gamingcoin-Qt para ver una lista con las opciones posibles de line de comandos.</translation>
+=======
+        <source>Show the Freicoin-Qt help message to get a list with possible Freicoin command-line options.</source>
+        <translation>Mostrar el mensaje de ayuda de Freicoin-Qt para ver una lista con las opciones posibles de line de comandos.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Show the Freicoin-Qt help message to get a list with possible Freicoin command-line options.</source>
         <translation>Mostrar el mensaje de ayuda de Freicoin-Qt para ver una lista con las opciones posibles de line de comandos.</translation>
@@ -1424,8 +1543,13 @@ Dirección: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Welcome to the Gamingcoin RPC console.</source>
         <translation>Bienvenido a la consola RPC de Gamingcoin</translation>
+=======
+        <source>Welcome to the Freicoin RPC console.</source>
+        <translation>Bienvenido a la consola RPC de Freicoin</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Welcome to the Freicoin RPC console.</source>
         <translation>Bienvenido a la consola RPC de Freicoin</translation>
@@ -1618,8 +1742,13 @@ Dirección: %4
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Enter a Gamingcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Introduce una dirección Gamingcoin (Ej.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+=======
+        <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Introduce una dirección Freicoin (Ej.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Introduce una dirección Freicoin (Ej.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
@@ -1689,8 +1818,13 @@ Dirección: %4
     <message>
         <location line="+14"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Gamingcoin address</source>
         <translation>Firma el mensaje para probar que posees esta dirección Gamingcoin</translation>
+=======
+        <source>Sign the message to prove you own this Freicoin address</source>
+        <translation>Firma el mensaje para probar que posees esta dirección Freicoin</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Sign the message to prove you own this Freicoin address</source>
         <translation>Firma el mensaje para probar que posees esta dirección Freicoin</translation>
@@ -1705,8 +1839,13 @@ Dirección: %4
     <message>
         <location line="-20"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Verify the message to ensure it was signed with the specified Gamingcoin address</source>
         <translation>Verifica el mensaje para asegurarte que fue firmada con la dirección Gamingcoin especificada</translation>
+=======
+        <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
+        <translation>Verifica el mensaje para asegurarte que fue firmada con la dirección Freicoin especificada</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
         <translation>Verifica el mensaje para asegurarte que fue firmada con la dirección Freicoin especificada</translation>
@@ -1747,6 +1886,7 @@ Dirección: %4
         <location line="-1"/>
         <location line="+3"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Enter a Gamingcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Introduce una dirección Gamingcoin (Ej.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
@@ -1755,6 +1895,8 @@ Dirección: %4
         <source>Enter Gamingcoin signature</source>
         <translation>Introduce la firma Gamingcoin</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Introduce una dirección Freicoin (Ej.: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
@@ -1762,6 +1904,9 @@ Dirección: %4
         <location line="+1"/>
         <source>Enter Freicoin signature</source>
         <translation>Introduce la firma Freicoin</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -2345,6 +2490,7 @@ Dirección: %4
 </context>
 <context>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <name>Gamingcoin-core</name>
     <message>
         <location filename="../Gamingcoinstrings.cpp" line="+9"/>
@@ -2353,6 +2499,8 @@ Dirección: %4
 It is recommended you use the following random password:
 rpcuser=Gamingcoinrpc
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     <name>freicoin-core</name>
     <message>
         <location filename="../freicoinstrings.cpp" line="+9"/>
@@ -2360,13 +2508,20 @@ rpcuser=Gamingcoinrpc
  %s
 It is recommended you use the following random password:
 rpcuser=freicoinrpc
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
 </source>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <translation>%s, debes especificar una contraseña rpc (rpcpassword) en el fichero de configuración:⏎ %s⏎ Se recomienda usar la siguiente contraseña aleatoria:⏎ rpcuser=Gamingcoinrpc⏎ rpcpassword=%s⏎ (no necesita recordar esta contraseña)⏎ Si el archivo no existe, crearlo con permisos de lectura sólo para el propietario.⏎</translation>
+=======
+        <translation>%s, debes especificar una contraseña rpc (rpcpassword) en el fichero de configuración:⏎ %s⏎ Se recomienda usar la siguiente contraseña aleatoria:⏎ rpcuser=freicoinrpc⏎ rpcpassword=%s⏎ (no necesita recordar esta contraseña)⏎ Si el archivo no existe, crearlo con permisos de lectura sólo para el propietario.⏎</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <translation>%s, debes especificar una contraseña rpc (rpcpassword) en el fichero de configuración:⏎ %s⏎ Se recomienda usar la siguiente contraseña aleatoria:⏎ rpcuser=freicoinrpc⏎ rpcpassword=%s⏎ (no necesita recordar esta contraseña)⏎ Si el archivo no existe, crearlo con permisos de lectura sólo para el propietario.⏎</translation>
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
@@ -2389,9 +2544,15 @@ If the file does not exist, create it with owner-readable-only file permissions.
     <message>
         <location line="+3"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Cannot obtain a lock on data directory %s.  Gamingcoin is probably already running.</source>
         <translation>No se puede obtener el bloqueo del directorio de datos %s.
 Probablemente Gamingcoin está siendo ya ejecutado.</translation>
+=======
+        <source>Cannot obtain a lock on data directory %s.  Freicoin is probably already running.</source>
+        <translation>No se puede obtener el bloqueo del directorio de datos %s.
+Probablemente Freicoin está siendo ya ejecutado.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Cannot obtain a lock on data directory %s.  Freicoin is probably already running.</source>
         <translation>No se puede obtener el bloqueo del directorio de datos %s.
@@ -2441,8 +2602,13 @@ Probablemente Freicoin está siendo ya ejecutado.</translation>
     <message>
         <location line="+3"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Unable to bind to %s on this computer. Gamingcoin is probably already running.</source>
         <translation>No se ha podido conectar a %s en este sistema. Probablemente Gamingcoin ya está siendo ejecutado.</translation>
+=======
+        <source>Unable to bind to %s on this computer. Freicoin is probably already running.</source>
+        <translation>No se ha podido conectar a %s en este sistema. Probablemente Freicoin ya está siendo ejecutado.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Unable to bind to %s on this computer. Freicoin is probably already running.</source>
         <translation>No se ha podido conectar a %s en este sistema. Probablemente Freicoin ya está siendo ejecutado.</translation>
@@ -2461,8 +2627,13 @@ Probablemente Freicoin está siendo ya ejecutado.</translation>
     <message>
         <location line="+3"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Gamingcoin will not work properly.</source>
         <translation>Aviso: Por favor, comprueba que la fecha y hora de tu ordenador son correctas! Si tu relog está mal Gamingcoin no funcionará correctamente.</translation>
+=======
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Freicoin will not work properly.</source>
+        <translation>Aviso: Por favor, comprueba que la fecha y hora de tu ordenador son correctas! Si tu relog está mal Freicoin no funcionará correctamente.</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Freicoin will not work properly.</source>
         <translation>Aviso: Por favor, comprueba que la fecha y hora de tu ordenador son correctas! Si tu relog está mal Freicoin no funcionará correctamente.</translation>
@@ -2601,8 +2772,13 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     <message>
         <location line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Error loading wallet.dat: Wallet requires newer version of Gamingcoin</source>
         <translation>Error cargando wallet.dat: el monedero nunca requiere el número de versión de Gamingcoin</translation>
+=======
+        <source>Error loading wallet.dat: Wallet requires newer version of Freicoin</source>
+        <translation>Error cargando wallet.dat: el monedero nunca requiere el número de versión de Freicoin</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Error loading wallet.dat: Wallet requires newer version of Freicoin</source>
         <translation>Error cargando wallet.dat: el monedero nunca requiere el número de versión de Freicoin</translation>
@@ -2651,6 +2827,7 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     <message>
         <location line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Gamingcoin version</source>
         <translation>Versión de Gamingcoin</translation>
     </message>
@@ -2659,6 +2836,8 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
         <source>Gamingcoin</source>
         <translation>Gamingcoin</translation>
 =======
+=======
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
         <source>Freicoin version</source>
         <translation>Versión de Freicoin</translation>
     </message>
@@ -2666,6 +2845,9 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
         <location line="+1"/>
         <source>Freicoin</source>
         <translation>Freicoin</translation>
+<<<<<<< HEAD
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
+=======
 >>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
     </message>
     <message>
@@ -2826,8 +3008,13 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     <message>
         <location line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Send command to -server or Gamingcoind</source>
         <translation>Enviar comandos a -server o Gamingcoind</translation>
+=======
+        <source>Send command to -server or freicoind</source>
+        <translation>Enviar comandos a -server o freicoind</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Send command to -server or freicoind</source>
         <translation>Enviar comandos a -server o freicoind</translation>
@@ -2899,8 +3086,13 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     <message>
         <location line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Specify configuration file (default: Gamingcoin.conf)</source>
         <translation>Especificar el archivo de configuración (predeterminado: Gamingcoin.conf)</translation>
+=======
+        <source>Specify configuration file (default: freicoin.conf)</source>
+        <translation>Especificar el archivo de configuración (predeterminado: freicoin.conf)</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Specify configuration file (default: freicoin.conf)</source>
         <translation>Especificar el archivo de configuración (predeterminado: freicoin.conf)</translation>
@@ -2919,8 +3111,13 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     <message>
         <location line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Specify pid file (default: Gamingcoind.pid)</source>
         <translation>Especifica el archivo pid (predeterminado: Gamingcoind.pid)</translation>
+=======
+        <source>Specify pid file (default: freicoind.pid)</source>
+        <translation>Especifica el archivo pid (predeterminado: freicoind.pid)</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Specify pid file (default: freicoind.pid)</source>
         <translation>Especifica el archivo pid (predeterminado: freicoind.pid)</translation>
@@ -3010,8 +3207,13 @@ Si el archivo no existe, créelo con permiso de lectura solamente para el propie
     <message>
         <location line="+1"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <source>Wallet needed to be rewritten: restart Gamingcoin to complete</source>
         <translation>El monedero necesitaba ser reescrito: reinicia Gamingcoin para completar</translation>
+=======
+        <source>Wallet needed to be rewritten: restart Freicoin to complete</source>
+        <translation>El monedero necesitaba ser reescrito: reinicia Freicoin para completar</translation>
+>>>>>>> ee23e385352666a9dea1e04f2036e3c5e7155149
 =======
         <source>Wallet needed to be rewritten: restart Freicoin to complete</source>
         <translation>El monedero necesitaba ser reescrito: reinicia Freicoin para completar</translation>
